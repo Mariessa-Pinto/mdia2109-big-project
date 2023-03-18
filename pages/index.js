@@ -15,7 +15,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-  
+        <Image
+          src={'/logo/borderless.svg'}
+          alt={'borderless logo'}
+          width={160}
+          height={160}
+        />
       </main>
     </>
   )

@@ -1,0 +1,25 @@
+/* .main {
+    padding: 1.688rem;
+} */
+
+.titleSection {
+    height: 227px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.answerBox {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 6.25rem;
+}
+
+.answerButton {
+    border: 2px solid var(--primary-color);
+    width: 22.563rem;
+    height: 4.5rem;
+    border-radius: 45px;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 4rem;
+}

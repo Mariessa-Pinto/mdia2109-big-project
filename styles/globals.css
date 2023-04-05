@@ -1,7 +1,7 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: 'open-sans';
+  --font-mono: 'Open Sans', sans-serif;
 
 
   --foreground-cream: #F7EAC9;
@@ -32,8 +32,9 @@ body {
 }
 
 body {
-  color:var(--background-text);
-  background:var(--foreground-cream) ;
+  color: var(--background-text);
+  background-color: var(--background-gray) ;
+  font-family: var(--font-mono);
 }
 
 a {

@@ -1,0 +1,15 @@
+.container{
+    width: 414px;
+    height:75px;
+    background-color:#494949;
+ 
+  }
+
+.footer{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+padding: 10px;
+
+
+}

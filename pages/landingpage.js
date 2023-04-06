@@ -1,15 +1,23 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
-import styles from '@/styles/landingpage.module.css'
+import styles from '@/styles/LandingPage.module.css'
+import Footer from '@/components/Footer'
 
 export default function LandingPage() {
 
     return( 
 
-        <>
-        
-        
-        </>
+<div className={styles.main}>
+
+
+
+ <Footer/>
+
+</div>
+
+
+
+
+      
     )
 }

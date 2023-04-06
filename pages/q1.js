@@ -1,7 +1,11 @@
 import styles from '@/styles/Q1.module.css'
 import BackButton from '@/components/BackButton'
+import { useState } from 'react'
 
 export default function Q1() {
+
+    const [clicked, setClicked] = useState(false);
+
     return (
         <>
         <div className={styles.main}>

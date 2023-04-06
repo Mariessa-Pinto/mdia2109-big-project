@@ -1,7 +1,7 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: 'Open Sans', sans-serif;
+  --font-mono: 'Open Sans';
   --header: 24px;
   --headerTwo: 20px;
   --body: 16px;

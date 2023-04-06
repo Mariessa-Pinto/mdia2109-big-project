@@ -1,7 +1,10 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: 'open-sans';
+  --font-mono: 'Open Sans', sans-serif;
+  --header: 24px;
+  --headerTwo: 20px;
+  --body: 16px;
 
 
   --foreground-cream: #F7EAC9;
@@ -29,11 +32,13 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-size: var(--body);
 }
 
 body {
-  color:var(--background-text);
-  background:var(--foreground-cream) ;
+  color: var(--background-text);
+  background-color: var(--background-gray) ;
+  font-family: var(--font-mono);
 }
 
 a {

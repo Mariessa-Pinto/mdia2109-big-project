@@ -6,10 +6,10 @@ export default function BackButton() {
         <>
             <div className={styles.backButton}>
                     <Image
-                        src={''}
-                        alt={''}
-                        width={50}
-                        height={50}
+                        src={'/icons/backArrow.svg'}
+                        alt={'back arrow'}
+                        width={30}
+                        height={30}
                     />
                     <p>Back</p>
                 </div>

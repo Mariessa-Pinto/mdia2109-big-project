@@ -6,14 +6,25 @@ import Footer from '@/components/Footer'
 export default function LandingPage() {
 
     return( 
+<main className={styles.main}>
 
-<div className={styles.main}>
+<div>
 
-
-
- <Footer/>
 
 </div>
+
+
+
+<div>
+<Footer/>
+
+
+</div>
+
+
+
+
+</main>
 
 
 

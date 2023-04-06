@@ -1,6 +1,6 @@
 .container{
     width: 414px;
-    height: 80px;
+    height: 95px;
     background-color:#494949;
  
   }
@@ -11,6 +11,7 @@ flex-direction: row;
 justify-content: space-evenly;
 padding: 10px;
 
+
 }
 
 .footerlinks{
@@ -18,4 +19,7 @@ padding: 10px;
     flex-direction: row;   
     justify-content: space-evenly;  
     color: white;
+    font-family: var(--font-mono);
+    padding-right: 18px;
+   
 }

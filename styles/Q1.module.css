@@ -1,17 +1,42 @@
-/* .main {
+.main {
     padding: 1.688rem;
-} */
-
-.titleSection {
-    height: 227px;
-    width: 100%;
     background-color: var(--secondary-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.answerBox {
-    background-color: var(--secondary-color);
+.header {
+    font-size: var(--header);
+    margin-bottom: 3.375rem;
+}
+
+.question {
+    font-size: var(--headerTwo);
+    margin-bottom: 2rem;
+}
+
+.titleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.questionNumber {
+    display: flex;
     width: 100%;
-    height: 6.25rem;
+    justify-content: flex-end;
+    margin-top: 0.875rem;
+}
+
+.questionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 4.5rem;
+    margin-top: 5.5rem;
 }
 
 .answerButton {
@@ -22,4 +47,22 @@
     background-color: transparent;
     text-align: left;
     padding-left: 4rem;
+    font-size: var(--body);
+}
+
+/* Progress Bar CSS */
+
+.progressBar {
+    width: 22.5rem;
+    height: 0.125rem;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    width: 3.375rem;
+    height: 0.625rem;
+    background-color: var(--primary-color);
+    border-radius: 16px;
 }

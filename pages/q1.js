@@ -7,6 +7,16 @@ export default function Q1() {
 
     const [clicked, setClicked] = useState(false);
 
+    const [uClicked, setUClicked] = useState(false);
+    const underClassName = uClicked ? `${styles["answerButtonActive"]} ${styles.answerButton}` : styles.answerButton;
+    const [nClicked, setNClicked] = useState(false);
+    const nineteenClassName = nClicked ? `${styles["answerButtonActive"]} ${styles.answerButton}` : styles.answerButton;
+    const [tClicked, setTClicked] = useState(false);
+    const twentyClassName = tClicked ? `${styles["answerButtonActive"]} ${styles.answerButton}` : styles.answerButton;
+    const [fClicked, setFClicked] = useState(false);
+    const fortyClassName = fClicked ? `${styles["answerButtonActive"]} ${styles.answerButton}` : styles.answerButton;
+
+
     return (
         <>
         <div className={styles.main}>
@@ -21,12 +31,17 @@ export default function Q1() {
             </div>
             <div className={styles.questionSection}>
                 <h2 className={styles.question}>How old are you?</h2>
-                    <button className={styles.answerButton}>Under 18</button>
-                    <button className={styles.answerButton}>19-25</button>
-                    <button className={styles.answerButton}>26-40</button>
-                    <button className={styles.answerButton}>40+</button>
+                    <button onClick={() => {setClicked(!clicked); setUClicked(!uClicked)}} className={underClassName}>Under 18</button>
+                    <button onClick={() => {setClicked(!clicked); setNClicked(!nClicked)}} className={nineteenClassName}>19-25</button>
+                    <button onClick={() => {setClicked(!clicked); setTClicked(!tClicked)}} className={twentyClassName}>26-40</button>
+                    <button onClick={() => {setClicked(!clicked); setFClicked(!fClicked)}} className={fortyClassName}>40+</button>
             </div>
-            <Link href={''}><BackButton/></Link>
+            <div className={styles.controls}>
+                <Link href={''}><BackButton/></Link>
+                {
+                    clicked ? <><Link href={'./q2'}><button className={styles.nextButton}>Next</button></Link></> : <></>
+                }
+            </div>
         </div>
         </>
     )

@@ -8,6 +8,7 @@ export default function Q3() {
 
     const [dropDownOpen, setDropDownOpen] = useState(false);
     const [province, setProvince] = useState('British Columbia');
+    const [clicked, setClicked] = useState(false);
 
     return (
         <>
@@ -34,26 +35,31 @@ export default function Q3() {
                     /></button>
                     {
                         dropDownOpen ? <>
-                            <ul>
-                                <li onClick={() => {setProvince('British Columbia'); setDropDownOpen(!dropDownOpen)}}>British Columbia (Default)</li>
-                                <li onClick={() => {setProvince('Alberta'); setDropDownOpen(!dropDownOpen)}}>Alberta</li>
-                                <li onClick={() => {setProvince('Manitoba'); setDropDownOpen(!dropDownOpen)}}>Manitoba</li>
-                                <li onClick={() => {setProvince('New Brunswick'); setDropDownOpen(!dropDownOpen)}}>New Brunswick</li>
-                                <li onClick={() => {setProvince('Newfoundland and Labrador'); setDropDownOpen(!dropDownOpen)}}>Newfoundland and Labrador</li>
-                                <li onClick={() => {setProvince('Nova Scotia'); setDropDownOpen(!dropDownOpen)}}>Nova Scotia</li>
-                                <li onClick={() => {setProvince('Ontario'); setDropDownOpen(!dropDownOpen)}}>Ontario</li>
-                                <li onClick={() => {setProvince('Northwest Territories'); setDropDownOpen(!dropDownOpen)}}>Northwest Territories</li>
-                                <li onClick={() => {setProvince('Nunavut'); setDropDownOpen(!dropDownOpen)}}>Nunavut</li>
-                                <li onClick={() => {setProvince('Quebec'); setDropDownOpen(!dropDownOpen)}}>Quebec</li>
-                                <li onClick={() => {setProvince('Saskatchewan'); setDropDownOpen(!dropDownOpen)}}>Saskatchewan</li>
-                                <li onClick={() => {setProvince('Prince Edward Island'); setDropDownOpen(!dropDownOpen)}}>Prince Edward Island</li>
-                                <li onClick={() => {setProvince('Yukon'); setDropDownOpen(!dropDownOpen)}}>Yukon</li>
-                            </ul>
+                                <ul className={styles.options}>
+                                    <li onClick={() => {setProvince('British Columbia'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>British Columbia (Default)</li>
+                                    <li onClick={() => {setProvince('Alberta'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Alberta</li>
+                                    <li onClick={() => {setProvince('Manitoba'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Manitoba</li>
+                                    <li onClick={() => {setProvince('New Brunswick'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>New Brunswick</li>
+                                    <li onClick={() => {setProvince('Newfoundland and Labrador'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Newfoundland and Labrador</li>
+                                    <li onClick={() => {setProvince('Nova Scotia'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Nova Scotia</li>
+                                    <li onClick={() => {setProvince('Ontario'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Ontario</li>
+                                    <li onClick={() => {setProvince('Northwest Territories'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Northwest Territories</li>
+                                    <li onClick={() => {setProvince('Nunavut'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Nunavut</li>
+                                    <li onClick={() => {setProvince('Quebec'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Quebec</li>
+                                    <li onClick={() => {setProvince('Saskatchewan'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Saskatchewan</li>
+                                    <li onClick={() => {setProvince('Prince Edward Island'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Prince Edward Island</li>
+                                    <li onClick={() => {setProvince('Yukon'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Yukon</li>
+                                </ul>
                         </> : <></>
                     }
                   
             </div>
-            <Link href={'./q2'}><BackButton/></Link>
+            <div className={styles.controls}>
+                <Link href={'./q2'}><BackButton/></Link>
+                {
+                    clicked ? <><Link href={'./q4'}><button className={styles.nextButton}>Next</button></Link></> : <></>
+                }
+            </div>
         </div>
         </>
     )

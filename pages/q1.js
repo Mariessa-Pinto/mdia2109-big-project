@@ -1,6 +1,7 @@
 import styles from '@/styles/Q1.module.css'
 import BackButton from '@/components/BackButton'
 import { useState } from 'react'
+import Link from 'next/link';
 
 export default function Q1() {
 
@@ -25,7 +26,7 @@ export default function Q1() {
                     <button className={styles.answerButton}>26-40</button>
                     <button className={styles.answerButton}>40+</button>
             </div>
-            <BackButton/>
+            <Link href={''}><BackButton/></Link>
         </div>
         </>
     )

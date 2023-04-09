@@ -82,6 +82,12 @@
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.value {
+    margin-top: 2rem;
+    margin-bottom: 17rem;
 }
 
 /* Progress Bar CSS */
@@ -103,26 +109,20 @@
 
 /* Range Slider */
 
-/* .rangeSlider {
-    width: 50%;
-}
-
 .mySlider {
     -webkit-appearance: none;
     background: var(--background-text);
-    width: 20rem;
-    height: 1.25rem;
-    opacity: 2;
-}
-
-.mySlider:hover {
-    opacity: 1;
+    width: 22.25rem;
+    height: 0.625rem;
+    border-radius: 25px;
 }
 
 .mySlider::-webkit-slider-thumb {
     -webkit-appearance: none;
     cursor: pointer;
-    background: #34495E  ;
-    width: 5%;
-    height: 20px;
-} */
+    background: var(--background-gray);
+    border: 1px solid var(--background-text);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}

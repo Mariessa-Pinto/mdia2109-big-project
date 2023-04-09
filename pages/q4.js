@@ -5,8 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Q4() {
-
-    const [clicked, setClicked] = useState(false);
     
     const [value, setValue] = useState('');
 
@@ -40,7 +38,7 @@ export default function Q4() {
                             className={styles.mySlider}
                             onChange={(event) => setValue(event.target.value)}
                         />
-                        <p>Current Value: {value}</p>
+                        <p className={styles.value}>Current Value: {value}</p>
                     </div>
                 </div>
                 <div className={styles.controls}>

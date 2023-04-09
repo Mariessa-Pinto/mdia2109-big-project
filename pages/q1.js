@@ -31,9 +31,9 @@ export default function Q1() {
             </div>
             <div className={styles.questionSection}>
                 <h2 className={styles.question}>How old are you?</h2>
-                    <button onClick={() => {setClicked(!clicked); setUClicked(!uClicked)}} className={underClassName}>Under 18</button>
+                    <button onClick={() => {setClicked(!clicked); setUClicked(!uClicked)}} className={underClassName}>18 and under</button>
                     <button onClick={() => {setClicked(!clicked); setNClicked(!nClicked)}} className={nineteenClassName}>19-25</button>
-                    <button onClick={() => {setClicked(!clicked); setTClicked(!tClicked)}} className={twentyClassName}>26-40</button>
+                    <button onClick={() => {setClicked(!clicked); setTClicked(!tClicked)}} className={twentyClassName}>26-39</button>
                     <button onClick={() => {setClicked(!clicked); setFClicked(!fClicked)}} className={fortyClassName}>40+</button>
             </div>
             <div className={styles.controls}>

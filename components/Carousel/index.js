@@ -22,13 +22,15 @@ const ImageSlider = ({ slides }) => {
     
 
 return (
-        <section className={styles.slider}>
+        <section>
+            <div className={styles.slide}>
             <img className={styles.leftarrow} onClick={prevSlide}   src="/icons/leftArrow.png"/>
             <img className={styles.rightarrow} onClick={nextSlide}  src="/icons/rightArrow.png"/>
+            </div>
         {photos.map((slide, index) => {
             return(
                 <div className={index === current ? 'slide active' : 'slide'} key = {index}>
-                    {index === current && ( <img className={styles.images} src={slide.Image} alt='school-images' />
+                    {index === current && ( <img className={styles.images} src={slide.Image} alt='refugee-images' />
                     )}
              </div>
             );

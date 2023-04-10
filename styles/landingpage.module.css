@@ -7,3 +7,43 @@
     margin-left: 35%;
     margin-right: 35%;
 }
+.top{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20rem;
+    width: 414px;
+
+}
+
+
+.logo{
+    width:47px;
+    height:45px;
+}
+.title{
+    padding-right: 10rem;
+    padding-top: 1rem;
+    width: 414px;
+}
+.header{
+    font-family:var(--font-mono);
+    font-size: 24px;
+    
+}
+
+
+.stories{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    gap: 40px;
+    width: 414px;
+    
+}
+.pencil{
+    height: 60px;
+    width: 60px;
+
+}
+

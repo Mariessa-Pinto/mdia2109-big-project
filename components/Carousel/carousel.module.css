@@ -1,9 +1,21 @@
+
+.slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+
+    
+}
+
+
+
+
 .leftarrow{
     height: 20px;
     width: 20px;
-   
 
-    
+
 }
 .rightarrow{
     height: 20px;

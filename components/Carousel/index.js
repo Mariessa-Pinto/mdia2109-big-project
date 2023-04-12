@@ -22,8 +22,8 @@ const ImageSlider = ({ slides }) => {
     
 
 return (
-        <section>
-            <div className={styles.slide}>
+        <section className={styles.pictures}>
+            <div className={styles.arrows}>
             <img className={styles.leftarrow} onClick={prevSlide}   src="/icons/leftArrow.png"/>
             <img className={styles.rightarrow} onClick={nextSlide}  src="/icons/rightArrow.png"/>
             </div>

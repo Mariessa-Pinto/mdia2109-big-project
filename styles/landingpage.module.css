@@ -1,21 +1,17 @@
 .main{
-    height: 896px;
-    width: 414px;
+    padding: 1.688rem;
+    background-color: var(--tertiary-color);
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 35%;
-    margin-right: 35%;
-    background-color: white;
 
 }
-.top{
-    display: flex;
-    flex-direction: column;
-    padding-right: 20rem;
+.title{
+    padding-top: 1rem;
     width: 414px;
-
+    padding-left: 2rem;
+    background-color: white;
+    padding-bottom: 2rem;
 }
 
 
@@ -23,27 +19,16 @@
     width:47px;
     height:45px;
 }
-.title{
-    padding-right: 10rem;
-    padding-top: 1rem;
-    width: 414px;
-}
+
 .header{
     font-family:var(--font-mono);
     font-size: 24px;
+    padding-right: 2rem;
+    text-align: left;
+    
     
 }
 
-
-.stories{
-    display: flex;
-    flex-direction: row;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    gap: 40px;
-    width: 414px;
-    
-}
 .name{
     font-family: var(--font-mono);
     padding-top: 10%;
@@ -52,32 +37,61 @@
 .icon{
     height: 60px;
     width: 60px;
+    margin-top: 1rem;
 
 }
+
 .section2{
     display: flex;
     flex-direction: row;
     width: 414px;
-    gap: 7rem;
+    gap: 3px;
+    padding-top: 3px;
 
    
 }
 .stats{
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
-    
+    align-items: center;
+    background-color: white;
+    width: 205px;
+    height: 220px;
+   
 }
 .resource{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 205px;
+    height: 220px;
+    background-color: white;
+    padding: 2px;
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+ 
 }
 
 .weather{
     display: flex;
     flex-direction: row;
     width: 414px;
-    padding-top: 2rem;
-    padding-left: 2rem;
     gap: 40px;
+    padding: 2rem;
+    background-color: white;
+    margin-top: 3px;
+
 }
+.stories{
+    display: flex;
+    gap: 40px;
+    width: 414px;
+    padding: 3rem;
+    background-color: white;
+}
+
+
+

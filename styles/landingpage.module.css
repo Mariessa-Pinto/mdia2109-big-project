@@ -1,9 +1,9 @@
 .main{
     padding: 1.688rem;
     background-color: var(--tertiary-color);
-    height: 100vh;
     display: flex;
     flex-direction: column;
+  
 
 }
 .title{

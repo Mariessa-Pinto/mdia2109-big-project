@@ -1,9 +1,20 @@
 .maincontent{
-    padding: 1.688rem;
+
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-left: 1rem;
+
+ 
+  
+
+ 
+}
+.top{
+   
+    width: 414px;
+
 }
 .header{
     font-family: var(--font-mono);
@@ -14,23 +25,26 @@
     gap: 2rem;
     width: 414px;
     margin-top: 3rem;
+
+  
+
 }
 
 .image1{
-    height:200px;
+    height: 208px;
     width: 201px;
 }
 
 .image3{
-    height:200px;
-    width: 201px;
+    height:150px;
+    width: 130px;
     margin-top:4rem;
 }
 
 
 .image2{
-    height:200px;
-    width: 201px;
+    height:201px;
+    width: 208px;
     margin-top: 8rem;
 }
 
@@ -39,12 +53,46 @@
     flex-direction: row;
     gap: 2rem;
     width: 414px;
+  
 }
 
 .image4{
-    height:200px;
-    width: 201px;
+    height:150px;
+    width: 130px;
     margin-top: 12rem;
     padding-bottom: 1rem;
 }
+
+.button1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.button2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom{
+    padding-top: 2rem;
+
+}
+
+
 

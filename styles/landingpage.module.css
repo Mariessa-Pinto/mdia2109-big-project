@@ -1,10 +1,9 @@
 .main{
-    padding: 1.688rem;
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
+    height: 100vh;
   
-
 }
 .title{
     padding-top: 1rem;
@@ -12,6 +11,13 @@
     padding-left: 2rem;
     background-color: white;
     padding-bottom: 2rem;
+}
+
+.carousel{
+    background-color: white;
+    width: 414px;
+    padding: 2rem;
+    margin-top: 3px;
 }
 
 
@@ -87,7 +93,7 @@
 }
 .stories{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     width: 414px;
     padding: 3rem;
     background-color: white;

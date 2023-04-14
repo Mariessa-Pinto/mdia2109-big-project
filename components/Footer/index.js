@@ -14,10 +14,10 @@ export default function Footer() {
          <img src='../icons/settings.png'></img>
      </div>
      <div className={styles.footerlinks}>
-     <a href="resources"> Resources</a>
-     <a href="landingpage"> Home</a>
-     <a href="stories"> Stories</a>
-     <a href="settings"> Settings</a>
+     <a href="resources">Resources</a>
+     <a href="landingpage">Home</a>
+     <a href="stories">Stories</a>
+     <a href="settings">Settings</a>
 
      </div>
     

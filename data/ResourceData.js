@@ -120,7 +120,7 @@ export const resourceData = {
       resources: "Syrian cuisine",
       location: "4 Manor Rd E, Toronto, ON M4S 1P8",
       contact: "(416) 322-7707",
-      image: "images/food7.jpg",
+      image: "/images/food7.jpg",
     },
     {
       province: "ON",

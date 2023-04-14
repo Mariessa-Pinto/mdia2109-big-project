@@ -31,13 +31,13 @@ export default function LandingPage() {
    <div className={styles.stats}>
       <img className={styles.icon} src='./icons/graph.png'></img>
       <a className={styles.name} href="about">Empowering Through Data</a>
-      <p>How you help Canada grow</p>
+      <p className={styles.stattext}>How you help Canada grow</p>
 
   </div>
  <div className={styles.resource}>
-    <img className={styles.icon} src='./icons/heart.png'></img>
+    <img className={styles.icon2} src='./icons/heart.png'></img>
     <a className={styles.name} href="resources">Local Support</a>
-    <p>Find help in your area</p>
+    <p className={styles.stattext}>Find help in your area</p>
 </div>
 </div>
 

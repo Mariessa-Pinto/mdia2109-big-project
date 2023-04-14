@@ -1,0 +1,89 @@
+.main {
+    background-color: var(--tertiary-color);
+    height: 100vh;
+    font-family: var(--font-mono);
+}
+
+.title {
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 7.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    justify-content: center;
+    gap: 5rem;
+    padding-left: 5rem;
+}
+
+.resources {
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 14.375rem;
+    margin-top: 0.625rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+}
+
+.food {
+    width: 12.625rem;
+    background-color: var(--secondary-color);
+    height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.shelter {
+    width: 12.625rem;
+    background-color: var(--secondary-color);
+    height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.clothing {
+    width: 12.625rem;
+    background-color: var(--secondary-color);
+    height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.community {
+    width: 12.625rem;
+    background-color: var(--secondary-color);
+    height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.subheader {
+    font-size: 18px;
+}
+
+.header {
+    font-size: var(--header);
+}

@@ -1,6 +1,62 @@
 .main{
-    padding: 1.688rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
+    width: 414px;
+    background-color: var( --tertiary-color);
   
+}
+
+.middleeast{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.header{
+    font-size: 16px;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    width: 350px;
+}
+
+.body{
+    font-size: small;
+    width: 350px;
+}
+
+
+.ukraine{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+
+}
+.header2{
+    font-size: 16px;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    width: 350px;
+}
+
+.body2{
+    font-size: small;
+    width: 350px;
+}
+
+.topsection{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 414px;
+    background-color: white;
+}
+
+.title{
+    font-family: var(--font-mono);
+    font-size: 24px;
+    text-align: center;
+    
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/settings.module.css'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 
 export default function Settings() {
@@ -17,84 +18,84 @@ return (
         </Head>
             <div className={styles.main}>
                 <div className={styles.title}>
-                    <h1>Settings</h1>
+                    <h1 className={styles.header}>Settings</h1>
                     <Image
-                        src={''}
-                        alt={''}
+                        src={'/images/profilePicture.png'}
+                        alt={'profile picture of women'}
                         width={157}
                         height={157}
                         className={styles.profilePic}
                     />
-                    <h2>Hi Maria Duarte</h2>
+                    <h2 className={styles.header}>Hi Maria Duarte</h2>
                 </div>
-                <div className={styles.account}>
+                <div className={styles.card}>
                     <div className={styles.icon}>
                         <Image
-                            src={''}
-                            alt={''}
+                            src={'/icons/accountIcon.svg'}
+                            alt={'account icon'}
                             width={30}
                             height={30}
                         />
                     </div>
                     <div className={styles.titles}>
-                        <h3>Account</h3>
-                        <p>Privacy, security, change email or phone number, language preferences</p>
+                        <h3 className={styles.subheader}>Account</h3>
+                        <p className={styles.text}>Privacy, security, change email or phone number, language preferences</p>
                     </div>
                 </div>
-                <div className={styles.notifications}>
+                <div className={styles.card}>
                     <div className={styles.icon}>
                         <Image
-                            src={''}
-                            alt={''}
+                            src={'/icons/notificationsBell.svg'}
+                            alt={'notifications icon'}
                             width={25}
                             height={30}
                         />
                     </div>
                     <div className={styles.titles}>
-                        <h3>Notifications</h3>
-                        <p>Messages, tones</p>
+                        <h3 className={styles.subheader}>Notifications</h3>
+                        <p className={styles.text}>Messages, tones</p>
                     </div>
                 </div>
-                <div className={styles.help}>
+                <div className={styles.card}>
                     <div className={styles.icon}>
                         <Image
-                            src={''}
-                            alt={''}
+                            src={'/icons/questionIcon.svg'}
+                            alt={'question icon'}
                             width={30}
                             height={30}
                         />
                     </div>
                     <div className={styles.titles}>
-                        <h3>Help</h3>
-                        <p>Help center, contact us, privacy policy</p>
+                        <h3 className={styles.subheader}>Help</h3>
+                        <p className={styles.text}>Help center, contact us, privacy policy</p>
                     </div>
                 </div>
-                <div className={styles.colorMode}>
+                <div className={styles.card}>
                     <div className={styles.icon}>
                         <Image
-                            src={''}
-                            alt={''}
+                            src={'/icons/nightIcon.svg'}
+                            alt={'moon icon'}
                             width={30}
                             height={28}
                         />
                     </div>
                     <div className={styles.titles}>
-                        <h3>Dark Mode/Light Mode</h3>
+                        <h3 className={styles.subheader}>Dark Mode/Light Mode</h3>
                     </div>
                 </div>
-                <div className={styles.faq}>
+                <Link href={'/faq'}><div className={styles.card}>
                     <div className={styles.icon}>
                         <Image
-                            src={''}
-                            alt={''}
+                            src={'/icons/FAQ.svg'}
+                            alt={'FAQ icon'}
                             width={30}
                             height={30}
                         />
                     </div>
                     <div className={styles.titles}>
-                        <h3>FAQ</h3>
+                        <h3 className={styles.subheader}>FAQ</h3>
                     </div>
-                </div>
+                </div></Link>
             </div>
             <Footer/>
         </>

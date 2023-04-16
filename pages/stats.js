@@ -4,9 +4,9 @@ import styles from '@/styles/stats.module.css'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
 import Link from 'next/link'
-import DoughnutChartMale from '@/components/Chart1'
+import DoughnutChartMale from '@/components/MaleChart'
 import BackButton from '@/components/BackButton'
-import DoughnutChartFemale from '@/components/Chart2'
+import DoughnutChartFemale from '@/components/FemaleChart'
 import DoughnutChartUniversal from '@/components/UniversalChart'
 
 

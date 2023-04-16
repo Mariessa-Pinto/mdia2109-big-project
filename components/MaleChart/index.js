@@ -7,38 +7,43 @@ import { Doughnut } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
-  labels: ['Food and beverage retailers', 'Grocery and convenience retailers ', 'Supermarkets and other grocery retailers', 'Convenience retailers and vending machine operators ', 'Specialty food retailers', 'Beer, wine and liquor retailers '],
+  labels: ['Canadian Born', 'Refugees'],
   datasets: [
     {
-      label: 'January 2023',
-      data: [12460015, 9318070, 8598513, 719557, 854760, 2287185],
+      label: 'Rates Of Entrepreneurship (in percent)',
+      data: [12, 14],
       backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
+        'rgba(75, 192, 100, 0.2)',
         'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)',
+      
+       
       ],
       borderColor: [
-        'rgba(255, 99, 132, 1)',
+        'rgba(75, 192, 100, 0.9)',
         'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)',
+       
+      
       ],
       borderWidth: 1,
     },
   ],
 };
 
-export default function DoughnutChart() {
+export default function DoughnutChartMale() {
   return (
     <>
-    <div className={styles.Doughnut}>
+    <h1 className={styles.heading}> Rates of Entrepreneurship in Canada</h1>
+    <p className={styles.describer}>Refugee entrepreneurship not only provides a means of self-sufficiency and economic independence for refugees, but also contributes to the growth and diversity of local economies. By starting their own businesses, refugees bring unique perspectives, skills, and cultural experiences to the table, which can lead to innovative ideas and new opportunities for both themselves and their communities.</p>
+    <div className={styles.doughnut}>
+      
       <Doughnut data={data}/>
-      </div>
+  </div>
+       
+<div className={styles.description}>
+
+<h2 className={styles.describer}>Canadian Refugees</h2>
+<h2 className={styles.describer}>Canadian Born</h2>
+</div>
     </>
   )
  

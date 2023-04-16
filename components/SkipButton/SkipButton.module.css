@@ -1,7 +1,7 @@
-.backButton {
+.skipButton {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.25rem;
-    height: 2.625rem;
+    margin-bottom: 1.688rem;
 }

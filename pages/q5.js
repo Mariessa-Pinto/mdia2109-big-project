@@ -1,5 +1,6 @@
 import styles from '@/styles/Q5.module.css'
 import BackButton from '@/components/BackButton'
+import SkipButton from '@/components/SkipButton'
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -14,6 +15,9 @@ export default function Q5() {
         <>
          <div className={styles.main}>
             <div className={styles.titleSection}>
+                <div className={styles.skip}>
+                    <Link href={'/landingpage'}><SkipButton/></Link>
+                </div>
                 <h1 className={styles.header}>Getting to know you</h1>
                 <div className={styles.progressBar}>
                     <div className={styles.progress}></div>
@@ -51,10 +55,11 @@ export default function Q5() {
                         </> : <></>
                     }
             </div>
+            <div className={styles.seperator}></div>
             <div className={styles.controls}>
                 <Link href={'./q4'}><BackButton/></Link>
                 {
-                    clicked ? <><Link href={''}><button className={styles.nextButton}>Submit</button></Link></> : <></>
+                    clicked ? <><Link href={'/landingpage'}><button className={styles.nextButton}>Submit</button></Link></> : <></>
                 }
             </div>
         </div>

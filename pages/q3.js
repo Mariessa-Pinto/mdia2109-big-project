@@ -1,5 +1,6 @@
 import styles from '@/styles/Q3.module.css'
 import BackButton from '@/components/BackButton'
+import SkipButton from '@/components/SkipButton'
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -14,6 +15,9 @@ export default function Q3() {
         <>
         <div className={styles.main}>
             <div className={styles.titleSection}>
+                <div className={styles.skip}>
+                    <Link href={'/landingpage'}><SkipButton/></Link>
+                </div>
                 <h1 className={styles.header}>Getting to know you</h1>
                 <div className={styles.progressBar}>
                     <div className={styles.progress}></div>
@@ -54,6 +58,7 @@ export default function Q3() {
                     }
                   
             </div>
+            <div className={styles.seperator}></div>
             <div className={styles.controls}>
                 <Link href={'./q2'}><BackButton/></Link>
                 {

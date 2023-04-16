@@ -1,5 +1,6 @@
 import styles from '@/styles/Q2.module.css'
 import BackButton from '@/components/BackButton'
+import SkipButton from '@/components/SkipButton'
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -20,6 +21,9 @@ export default function Q2() {
         <>
         <div className={styles.main}>
             <div className={styles.titleSection}>
+                <div className={styles.skip}>
+                    <Link href={'/landingpage'}><SkipButton/></Link>
+                </div>
                 <h1 className={styles.header}>Getting to know you</h1>
                 <div className={styles.progressBar}>
                     <div className={styles.progress}></div>
@@ -35,6 +39,7 @@ export default function Q2() {
                     <button onClick={() => {setClicked(!clicked); setOClicked(!oClicked)}} className={otherClassName}>Other</button>
                     <button onClick={() => {setClicked(!clicked); setNClicked(!nClicked)}} className={notClassName}>Prefer to not answer</button>
             </div>
+            <div className={styles.seperator}></div>
             <div className={styles.controls}>
                 <Link href={'./q1'}><BackButton/></Link>
                 {

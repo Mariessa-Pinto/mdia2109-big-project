@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import styles from './doughnut.module.css'
+import styles from './chart3.module.css'
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';

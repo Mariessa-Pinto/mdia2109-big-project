@@ -1,7 +1,11 @@
 .main {
+   
     background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     height: 100vh;
-    font-family: var(--font-mono);
+    width: 414px;
 }
 .title{
     width: 100%;
@@ -9,7 +13,7 @@
     height: 7.5rem;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    width: 414px;
     padding-bottom: 1rem;
     justify-content: center;
     gap: 5rem;
@@ -20,7 +24,7 @@
     background-color: white;
     width: 414px;
     padding: 2rem;
-    margin-top: 3px;
+    margin-top: 4px;
 }
 
 
@@ -32,8 +36,9 @@
 .header{
     font-family:var(--font-mono);
     font-size: 24px;
-    padding-right: 2rem;
+    padding-right: 11rem;
     text-align: left;
+    padding-top: 5rem;
     
     
 }
@@ -60,7 +65,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 0.625rem;
+     margin-top: 1rem;
+     width: 414px;
 
    
 }
@@ -81,12 +87,11 @@
 .resource{
     width: 12.625rem;
     background-color: white;
-    height: 13.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+
 }
 .section3{
     display: flex;
@@ -96,7 +101,7 @@
 }
 
 .weather{
-    width: 100%;
+    width: 414px;
     background-color:white;
     height: 10.375rem;
     margin-top: 0.625rem;
@@ -108,9 +113,9 @@
 
 }
 .stories{
-    width: 100%;
+    width: 414px;
     background-color:white;
-    height: 14.375rem;
+    height: 11.375rem;
     margin-top: 0.625rem;
     display: flex;
     flex-direction: row;

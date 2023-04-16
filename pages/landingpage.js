@@ -6,6 +6,8 @@ import ImageSlider from '@/components/Carousel'
 
 export default function LandingPage() {
 
+
+
     return( 
 <>
         <Head>
@@ -22,6 +24,7 @@ export default function LandingPage() {
 
 <main className={styles.main}>
 
+
 <div className={styles.carousel}>
 
 <ImageSlider/>
@@ -30,7 +33,7 @@ export default function LandingPage() {
 <div className={styles.section2}>
    <div className={styles.stats}>
       <img className={styles.icon} src='./icons/graph.png'></img>
-      <a className={styles.name} href="about">Empowering Through Data</a>
+      <a className={styles.name} href="stats">Empowering Through Data</a>
       <p className={styles.stattext}>How you help Canada grow</p>
 
   </div>

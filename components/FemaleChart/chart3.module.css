@@ -1,7 +1,9 @@
 .doughnut{
     height: 246px;
     width: 246px;
+
 }
+
 
 .heading{
     font-size: 11px;
@@ -19,4 +21,5 @@
 .describer{
     font-size: 10px;
     font-family: var(--font-mono);
+    padding-top: 1rem;
 }

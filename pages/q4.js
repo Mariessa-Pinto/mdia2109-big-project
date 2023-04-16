@@ -1,5 +1,6 @@
 import styles from '@/styles/Q4.module.css'
 import BackButton from '@/components/BackButton'
+import SkipButton from '@/components/SkipButton'
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,11 +9,13 @@ export default function Q4() {
     
     const [value, setValue] = useState('');
 
-
     return (
         <>
         <div className={styles.main}>
             <div className={styles.titleSection}>
+                <div className={styles.skip}>
+                    <Link href={'/landingpage'}><SkipButton/></Link>
+                </div>
                 <h1 className={styles.header}>Getting to know you</h1>
                 <div className={styles.progressBar}>
                     <div className={styles.progress}></div>
@@ -41,12 +44,13 @@ export default function Q4() {
                         <p className={styles.value}>Current Value: {value}</p>
                     </div>
                 </div>
-                <div className={styles.controls}>
+            </div>
+            <div className={styles.seperator}></div>
+            <div className={styles.controls}>
                 <Link href={'./q3'}><BackButton/></Link>
                 {
                     value !== '' ? <><Link href={'./q5'}><button className={styles.nextButton}>Next</button></Link></> : <></>
                 }
-                </div>
             </div>
         </div>
         </>

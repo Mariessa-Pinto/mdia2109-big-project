@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import styles from './chart1.module.css'
+import styles from './UniversalChart.module.css'
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
@@ -31,7 +31,7 @@ export const data = {
     ],
   };
   
-  export default function DoughnutChartUniversal() {
+  export default function UniversalChart() {
     return (
       <>
       <h1 className={styles.heading}> Home Ownership </h1>

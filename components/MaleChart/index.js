@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import styles from './chart2.module.css'
+import styles from './MaleChart.module.css'
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
@@ -29,7 +29,7 @@ export const data = {
   ],
 };
 
-export default function DoughnutChartMale() {
+export default function MaleChart() {
   return (
     <>
     <h1 className={styles.heading}> Rates of Entrepreneurship in Canada</h1>

@@ -6,7 +6,7 @@ import ImageSlider from '@/components/Carousel'
 
 export default function LandingPage() {
 
-    var title = process.env.NEXT_PUBLIC_TITLE;
+
 
     return( 
 <>
@@ -23,7 +23,8 @@ export default function LandingPage() {
      </div>
 
 <main className={styles.main}>
-<h1>{title}</h1>
+
+
 <div className={styles.carousel}>
 
 <ImageSlider/>

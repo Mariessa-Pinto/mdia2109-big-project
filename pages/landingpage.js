@@ -23,7 +23,7 @@ export default function LandingPage() {
      </div>
 
 <main className={styles.main}>
-{title}
+<h1>{title}</h1>
 <div className={styles.carousel}>
 
 <ImageSlider/>

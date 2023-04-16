@@ -4,10 +4,10 @@ import styles from '@/styles/stats.module.css'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
 import Link from 'next/link'
-import DoughnutChartMale from '@/components/maleChart'
+import MaleChart from '@/components/MaleChart'
 import BackButton from '@/components/BackButton'
-import DoughnutChartFemale from '@/components/femaleChart'
-import DoughnutChartUniversal from '@/components/universalChart'
+import FemaleChart from '@/components/FemaleChart'
+import UniversalChart from '@/components/UniversalChart'
 
 
 
@@ -48,9 +48,9 @@ export default function Stats() {
     <div className={styles.charts}>
     
     
-    <DoughnutChartMale/>
-    <DoughnutChartFemale/>
-    <DoughnutChartUniversal/>
+    <MaleChart/>
+    <FemaleChart/>
+    <UniversalChart/>
    
    
    

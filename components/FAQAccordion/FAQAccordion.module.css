@@ -1,0 +1,27 @@
+.questionBar {
+    position: relative;
+    top: 0;
+    padding-left: 1.688rem;
+    padding-right: 1.688rem;
+    height: 100%;
+}
+
+.questionChevron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqActive {
+    height: 15.625rem;
+    width: 100%;
+    background-color: var(--quarternary-color);
+    padding-left: 1.688rem;
+    padding-right: 1.688rem;
+    transition: height 0.3s ease-in-out;
+}
+
+.answerActive {
+    padding-left: 1.688rem;
+    padding-right: 1.688rem;
+}

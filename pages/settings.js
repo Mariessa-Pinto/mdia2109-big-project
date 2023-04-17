@@ -4,9 +4,7 @@ import styles from '@/styles/settings.module.css'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 
-
 export default function Settings() {
-
 
 return (
         <>

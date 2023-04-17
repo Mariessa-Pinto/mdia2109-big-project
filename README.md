@@ -1,20 +1,33 @@
 # Team Members 
 - Bri-Lynn Guemos
-- Sanly Lotfzad Pak
 - Mariessa Pinto 
 
 ## Description
-- Our Project is a web app on the topic of the war refugee crisis. 
+- Our project is a web app for refugees who are settling in Canada. The app focuses on providing refugees information for resources such as clothing, shelter, food and community connections. It also tailors weather from their origin region, stories of hope and help and statistics all filtered by basic demographic information provided in a quiz.
 
 ## Tools/Technology 
 - Next.js
+- Javascript
 - CSS
 
 ## Command Lines 
 - npm run dev 
 
 ## Resources
-- Documentation/citation of resources used or data gotten from another site
+
+### Female Chart Data 
+[Name that displays](url)
+
+### Male Chart Data 
+[Name that displays](url)
+
+### Universal Chart Data 
+[Name that displays](url)
 
 ## Packages/Dependencies 
-- Documentation of commands used to install packages/dependencies
+
+### Chartjs
+https://react-chartjs-2.js.org/examples/vertical-bar-chart
+```
+npm i react-chartjs-2
+```

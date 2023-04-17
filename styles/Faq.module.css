@@ -1,0 +1,30 @@
+.main {
+    background-color: var(--tertiary-color);
+    height: 59.063rem;
+}
+
+.title {
+    width: 100%;
+    height: 11.25rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.header {
+    font-size: var(--header);
+}
+
+.back {
+    padding-right: 18rem;
+}
+
+.questions {
+    height: 3.75rem;
+    background-color: var(--secondary-color);
+    margin-top: 0.625rem;
+}

@@ -14,16 +14,12 @@
     
 }
 
-
-
-
-
 .maincontent{
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
     width: 414px;
-   
+    padding-bottom: 5.25rem;
 }
 
 .section1{
@@ -31,9 +27,8 @@ text-align: center;
 background-color: white;
 margin-top: 1rem;
 padding: 5rem;
-
-
 }
+
 .title{
     font-size: 18px;
     font-weight: 500;

@@ -1,12 +1,11 @@
 .main {
-   
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     height: 100vh;
     width: 414px;
 }
+
 .title{
     width: 100%;
     background-color: white;
@@ -24,7 +23,7 @@
     background-color: white;
     width: 414px;
     padding: 2rem;
-    margin-top: 4px;
+    margin-top: 0.6rem;
 }
 
 
@@ -38,9 +37,7 @@
     font-size: 24px;
     padding-right: 11rem;
     text-align: left;
-    padding-top: 5rem;
-    
-    
+    padding-top: 5rem;   
 }
 
 .name{
@@ -48,12 +45,12 @@
     padding-top: 10%;
     text-align: center;
 }
+
 .icon{
     height: 60px;
     width: 60px;
-  
-
 }
+
 .icon2{
     height: 70px;
     width: 60px;
@@ -65,11 +62,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-     margin-top: 1rem;
+     margin-top: 0.6rem;
      width: 414px;
-
-   
 }
+
 .stats{
     width: 12.625rem;
     background-color: white;
@@ -104,7 +100,7 @@
     width: 414px;
     background-color:white;
     height: 10.375rem;
-    margin-top: 0.625rem;
+    margin-top: 0.6rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -116,7 +112,7 @@
     width: 414px;
     background-color:white;
     height: 11.375rem;
-    margin-top: 0.625rem;
+    margin-top: 0.6rem;
     display: flex;
     flex-direction: row;
     align-items: center;

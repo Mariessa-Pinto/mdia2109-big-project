@@ -48,7 +48,7 @@ export default function LandingPage() {
 <div className={styles.section3}>
 <div className={styles.weather}>
  <img className={styles.icon} src='./icons/umbrella.png'></img>
- <a className={styles.name} href="/">Weather From Home</a>
+ <a className={styles.name} href="weather">Weather From Home</a>
 
 </div>
 <div className={styles.stories}>

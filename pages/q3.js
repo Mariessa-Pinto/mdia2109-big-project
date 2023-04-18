@@ -56,7 +56,6 @@ export default function Q3() {
                                 </ul>
                         </> : <></>
                     }
-                  
             </div>
             <div className={styles.seperator}></div>
             <div className={styles.controls}>

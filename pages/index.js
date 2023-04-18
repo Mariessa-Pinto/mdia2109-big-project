@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
+import QuizButton from '@/components/QuizButton'
+import SkipButton from '@/components/SkipButton'
 
 
 export default function Home() {
@@ -22,8 +24,8 @@ export default function Home() {
 
           
         />
-
-       <Link href="q1">Quiz</Link>  
+        <Link href={"/quizIntro"}>Next</Link>
+       
       </main>
     </>
   )

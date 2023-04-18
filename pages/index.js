@@ -23,7 +23,7 @@ export default function Home() {
           
         />
 
-       <Link href="landingpage">landing page</Link>  
+       <Link href="q1">Quiz</Link>  
       </main>
     </>
   )

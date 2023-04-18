@@ -8,6 +8,12 @@ import Link from 'next/link.js'
 
 export default function FAQ() {
 
+    const [activeIndex, setActiveIndex] = useState(-1);
+
+    const handleAccordionClick = (index) => {
+        setActiveIndex(activeIndex === index ? -1 : index);
+    }
+
     const [data, setData] = useState([...faqData.questions]);
 
     return (
@@ -23,8 +29,14 @@ export default function FAQ() {
             {
             data && data.map((info, index) => {
                 return(
-                <div className={styles.questions}>
-                    <FAQAccordion key={index} question={info.question} answer={info.answer}/>
+                <div className={styles.questions} key={index}>
+                    <FAQAccordion 
+                        question={info.question} 
+                        answer={info.answer}
+                        isActive={activeIndex === index}
+                        setIsActive={() => handleAccordionClick(index)}
+                        index ={index}
+                    />
                 </div>
                 )
             })

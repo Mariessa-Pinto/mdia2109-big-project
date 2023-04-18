@@ -1,9 +1,10 @@
 .questionBar {
     position: relative;
     top: 0;
-    padding-left: 1.688rem;
-    padding-right: 1.688rem;
-    height: 100%;
+    padding: 1rem 1.688rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .questionChevron {
@@ -21,7 +22,7 @@
     transition: height 0.3s ease-in-out;
 }
 
-.answerActive {
-    padding-left: 1.688rem;
-    padding-right: 1.688rem;
+.faqActive .questionBar {
+    padding-left: 0;
+    padding-right: 0;
 }

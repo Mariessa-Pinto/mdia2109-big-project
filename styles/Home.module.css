@@ -8,5 +8,17 @@
   background-color:var(--secondary-color);
 }
 
+.describer{
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.skip{
+  margin-left: 15rem;
+}
+
 
 

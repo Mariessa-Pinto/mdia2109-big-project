@@ -18,35 +18,35 @@ export default function Q2() {
     const notClassName = nClicked ? `${styles["answerButtonActive"]} ${styles.answerButton}` : styles.answerButton;
 
     return (
-        <>
-        <div className={styles.main}>
-            <div className={styles.titleSection}>
-                <div className={styles.skip}>
-                    <Link href={'/landingpage'}><SkipButton/></Link>
+        <div className={styles.container}>
+            <div className={styles.main}>
+                <div className={styles.titleSection}>
+                    <div className={styles.skip}>
+                        <Link href={'/landingpage'}><SkipButton/></Link>
+                    </div>
+                    <h1 className={styles.header}>Getting to know you</h1>
+                    <div className={styles.progressBar}>
+                        <div className={styles.progress}></div>
+                    </div>
+                    <div className={styles.questionNumber}>
+                        <p>2/5</p>
+                    </div>
                 </div>
-                <h1 className={styles.header}>Getting to know you</h1>
-                <div className={styles.progressBar}>
-                    <div className={styles.progress}></div>
+                <div className={styles.questionSection}>
+                    <h2 className={styles.question}>What is your gender?</h2>
+                        <button onClick={() => {setClicked(!clicked); setFClicked(!fClicked)}} className={femaleClassName}>Female</button>
+                        <button onClick={() => {setClicked(!clicked); setMClicked(!mClicked)}} className={maleClassName}>Male</button>
+                        <button onClick={() => {setClicked(!clicked); setOClicked(!oClicked)}} className={otherClassName}>Other</button>
+                        <button onClick={() => {setClicked(!clicked); setNClicked(!nClicked)}} className={notClassName}>Prefer to not answer</button>
                 </div>
-                <div className={styles.questionNumber}>
-                    <p>2/5</p>
+                <div className={styles.seperator}></div>
+                <div className={styles.controls}>
+                    <Link href={'./q1'}><BackButton/></Link>
+                    {
+                        clicked ? <><Link href={'./q3'}><button className={styles.nextButton}>Next</button></Link></> : <></>
+                    }
                 </div>
-            </div>
-            <div className={styles.questionSection}>
-                <h2 className={styles.question}>What is your gender?</h2>
-                    <button onClick={() => {setClicked(!clicked); setFClicked(!fClicked)}} className={femaleClassName}>Female</button>
-                    <button onClick={() => {setClicked(!clicked); setMClicked(!mClicked)}} className={maleClassName}>Male</button>
-                    <button onClick={() => {setClicked(!clicked); setOClicked(!oClicked)}} className={otherClassName}>Other</button>
-                    <button onClick={() => {setClicked(!clicked); setNClicked(!nClicked)}} className={notClassName}>Prefer to not answer</button>
-            </div>
-            <div className={styles.seperator}></div>
-            <div className={styles.controls}>
-                <Link href={'./q1'}><BackButton/></Link>
-                {
-                    clicked ? <><Link href={'./q3'}><button className={styles.nextButton}>Next</button></Link></> : <></>
-                }
             </div>
         </div>
-        </>
     )
 }

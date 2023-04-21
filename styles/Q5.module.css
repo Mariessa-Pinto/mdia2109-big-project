@@ -116,3 +116,17 @@
     background-color: var(--quarternary-color);
     border-radius: 16px;
 }
+
+@media only screen and (min-width: 415px) {
+    .container {
+        display: flex;
+        height: 100vh;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .main {
+        width: 414px;
+        height: 896px;
+    }
+}

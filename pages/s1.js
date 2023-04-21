@@ -6,13 +6,17 @@ import { storyData } from '@/data/organizationdata'
 import { useState } from 'react'
 import BackButton from '@/components/BackButton'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 
 export default function StoryOne() {
 
   const [information, setInformation] = useState([...storyData.unhcr]);
+  
+  const router = useRouter();
 
- 
+  const { region } = router.query;
+  console.log(region);
 
 
     return ( 
@@ -40,7 +44,7 @@ export default function StoryOne() {
 
       
           {information && information.map((info, index) => {
-            if(info.region === "Middle East"){
+            if(info.region === {region}){
               return(
               <div className={styles.middleeast} key={index}>
 

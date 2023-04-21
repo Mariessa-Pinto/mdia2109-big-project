@@ -8,7 +8,9 @@ import BackButton from '@/components/BackButton'
 import Link from 'next/link'
 
 
-export default function StoryOne() {
+export default function StoryOne({
+  region
+}) {
 
   const [information, setInformation] = useState([...storyData.unhcr]);
 
@@ -40,7 +42,7 @@ export default function StoryOne() {
 
       
           {information && information.map((info, index) => {
-            if(info.region === "Middle East"){
+            if(info.region === {region}){
               return(
               <div className={styles.middleeast} key={index}>
 

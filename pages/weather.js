@@ -25,7 +25,7 @@ export default function Weather() {
 </div>
 
 
-    <main className={styles.maincontent}>
+<main className={styles.maincontent}>
         
         
         

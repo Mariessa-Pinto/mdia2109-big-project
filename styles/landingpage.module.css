@@ -2,8 +2,9 @@
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 414px;
+    height: 896px;
+    overflow: y;
 }
 
 .title{
@@ -106,8 +107,8 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-
 }
+
 .stories{
     width: 414px;
     background-color:white;
@@ -120,5 +121,18 @@
     gap: 2rem;
 }
 
+@media only screen and (min-width: 415px) {
+    .container {
+        display: flex;
+        height: 100vh;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .main {
+        width: 414px;
+        height: 896px;
+    }
+  }
 
 

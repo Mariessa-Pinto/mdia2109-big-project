@@ -1,9 +1,8 @@
 .container{
-  width: 100%;
+  width: 414px;
   height: 75px;
-  background-color:var(--quinary-color);
+  background-color: var(--quinary-color);
   position: fixed;
-  left: 0;
   bottom: 0;
 }
 
@@ -25,4 +24,13 @@
 .name {
   font-size: 11px;
   color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 415px) {
+  .responsive {
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+  }
 }

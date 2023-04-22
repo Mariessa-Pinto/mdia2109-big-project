@@ -1,7 +1,18 @@
 .main {
     background-color: var(--tertiary-color);
-    height: 1193px;
+    width: 414px;
+    height: 896px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 4rem;
 }
+
+/*SCROLLBAR INVISIBLE*/
+.main::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 
 .title {
     height: 7.5rem;
@@ -19,3 +30,18 @@
     font-size: var(--header);
     padding-right: 3rem;
 }
+
+@media only screen and (min-width: 415px) {
+    .container {
+        display: flex;
+        height: 100vh;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .main {
+        width: 414px;
+        height: 896px;
+        padding-bottom: 0;
+    }
+  }

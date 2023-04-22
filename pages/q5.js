@@ -6,7 +6,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-export default function Q5() {
+export default function Q5({
+    passRegion
+}) {
 
     const [dropDownOpen, setDropDownOpen] = useState(false);
     const [region, setRegion] = useState('North America');

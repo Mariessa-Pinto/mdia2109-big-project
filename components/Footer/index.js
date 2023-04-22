@@ -6,6 +6,7 @@ export default function Footer() {
 
 
     return(  
+      <div className={styles.responsive}>
       <div className={styles.container}>    
         <div className={styles.footer}>
           <Link href={'/landingpage'}><div className={styles.link}>
@@ -45,6 +46,7 @@ export default function Footer() {
             <h2 className={styles.name}>Settings</h2>
           </div></Link>
         </div> 
+      </div>
       </div>
    )
 }

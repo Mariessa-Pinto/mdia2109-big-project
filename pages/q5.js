@@ -4,6 +4,7 @@ import SkipButton from '@/components/SkipButton'
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export default function Q5({
     passRegion
@@ -12,6 +13,15 @@ export default function Q5({
     const [dropDownOpen, setDropDownOpen] = useState(false);
     const [region, setRegion] = useState('North America');
     const [clicked, setClicked] = useState(false);
+    const router = useRouter();
+    const handleButtonClick = () => {
+        router.push({
+            pathname:'/s1',
+            query: {region},
+        });
+        setClicked(true);
+    }
+
 
     return (
         <div className={styles.container}>
@@ -61,7 +71,7 @@ export default function Q5({
                 <div className={styles.controls}>
                     <Link href={'./q4'}><BackButton/></Link>
                     {
-                        clicked ? <><Link href={'/landingpage'}><button className={styles.nextButton}>Submit</button></Link></> : <></>
+                        clicked ? <><Link href={'/landingpage'}><button className={styles.nextButton} onClick={handleButtonClick}>Submit</button></Link></> : <></>
                     }
                 </div>
             </div>

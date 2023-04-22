@@ -5,7 +5,9 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Q5() {
+export default function Q5({
+    passRegion
+}) {
 
     const [dropDownOpen, setDropDownOpen] = useState(false);
     const [region, setRegion] = useState('North America');

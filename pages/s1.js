@@ -6,14 +6,18 @@ import { storyData } from '@/data/organizationdata'
 import { useState } from 'react'
 import BackButton from '@/components/BackButton'
 import Link from 'next/link'
+import Q5 from "./q5"
 
 
 export default function StoryOne() {
 
   const [information, setInformation] = useState([...storyData.unhcr]);
 
- 
+  const [region, setRegion] = useState('');
 
+  const quizRegion = (regionData) => {
+    setRegion(regionData);
+  }
 
     return ( 
      <>
@@ -24,9 +28,6 @@ export default function StoryOne() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 </Head>
-
-
-
 
 
 <div className={styles.topsection}>
@@ -40,11 +41,11 @@ export default function StoryOne() {
 
       
           {information && information.map((info, index) => {
-            if(info.region === "Middle East"){
+            if(info.region === region){
               return(
               <div className={styles.middleeast} key={index}>
 
-            <Image
+              <Image
               src={info.image}
               height={186}
               width={364}

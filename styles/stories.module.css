@@ -1,16 +1,19 @@
 .maincontent{
-    padding: 1.688rem;
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100vh;
     width: 414px;
+    height: 896px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 4rem;
+}
 
- 
-  
-
- 
+/*SCROLLBAR INVISIBLE*/
+.maincontent::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 .top{
     padding: 2rem;
@@ -100,6 +103,19 @@
     padding-top: 2rem;
 
 }
-
+@media only screen and (min-width: 415px) {
+    .container {
+        display: flex;
+        height: 100vh;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .maincontent {
+        width: 414px;
+        height: 896px;
+        padding-bottom: 0;
+    }
+  }
 
 

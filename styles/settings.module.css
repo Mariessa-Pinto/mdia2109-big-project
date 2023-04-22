@@ -1,6 +1,16 @@
 .main {
     background-color: var(--tertiary-color);
-    height: 1115px;
+    width: 414px;
+    height: 896px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 4rem;
+}
+
+/*SCROLLBAR INVISIBLE*/
+.main::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 .header {
@@ -51,3 +61,18 @@
     font-size: 12px;
     color: var(--background-text);
 }
+
+@media only screen and (min-width: 415px) {
+    .container {
+        display: flex;
+        height: 100vh;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .main {
+        width: 414px;
+        height: 896px;
+        padding-bottom: 0;
+    }
+  }

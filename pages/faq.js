@@ -17,7 +17,7 @@ export default function FAQ() {
     const [data, setData] = useState([...faqData.questions]);
 
     return (
-        <>
+        <div className={styles.container}>
         <div className={styles.main}>
             <div className={styles.title}>
                 <h1 className={styles.header}>FAQ</h1>
@@ -42,8 +42,9 @@ export default function FAQ() {
             })
             }
             </div>
-        </div>
+        
         <Footer/>
-        </>
+        </div>
+        </div>
     )
 }

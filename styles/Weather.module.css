@@ -6,26 +6,35 @@
     background-color: white;
     padding: 2rem;
     width: 414px;
+
  
+}
+/*SCROLLBAR INVISIBLE*/
+.main::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 .title{
     font-size: 20px;
 
 }
+.container{
+    display: flex;
+    flex-direction: column;
 
+
+    
+}
 
 
 
 .maincontent{
     background-color: var(--tertiary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 414px;
-    padding-top: 1rem;
-    height: 850px;
     padding-bottom: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
  
  
 }
@@ -37,6 +46,7 @@
     width: 414px;
     padding: 1rem;
     padding-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .image{
@@ -76,3 +86,17 @@
   
 }
 
+@media only screen and (min-width: 415px) {
+    .container {
+        display: flex;
+        height: 100vh;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .maincontent {
+        width: 414px;
+        height: 950px;
+        padding-bottom: 0;
+    }
+  }

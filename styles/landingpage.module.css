@@ -7,6 +7,9 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.container{
+    height: 950px;
+}
 
 /*SCROLLBAR INVISIBLE*/
 .main::-webkit-scrollbar {
@@ -15,16 +18,20 @@
 }
 
 .title{
-    width: 100%;
+  
     background-color: white;
-    height: 7.5rem;
     display: flex;
     flex-direction: row;
     width: 414px;
+    align-items: center;
+    padding-left: 1rem;
+    gap: 1rem;
+    padding-top: 5rem;
     padding-bottom: 1rem;
-    justify-content: center;
-    gap: 5rem;
-    padding-left: 2rem;
+   
+    
+    
+ 
 }
 
 .carousel{
@@ -34,18 +41,19 @@
     margin-top: 0.6rem;
 }
 
-
-.logo{
-    width:47px;
-    height:45px;
+.homeicon{
+    width: 35px;
+    height:35px;
 }
+
+
 
 .header{
     font-family:var(--font-mono);
-    font-size: 24px;
+    font-size: 20px;
     padding-right: 11rem;
-    text-align: left;
-    padding-top: 5rem;   
+    text-align: center;
+ 
 }
 
 .name{

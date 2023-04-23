@@ -4,10 +4,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 414px;
-    height: 896px;
+    height: 900px;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding-bottom: 4rem;
+
 }
 
 /*SCROLLBAR INVISIBLE*/
@@ -21,6 +21,12 @@
     flex-direction: column;
     width: 414px;
     background-color: white;
+}
+.storycontent{
+    background-color: white;
+    height: 200vh;
+    margin-top: 1rem;
+    padding: 1rem;
 }
 
 .header{
@@ -47,7 +53,7 @@
 
 .image3{
     height:150px;
-    width: 130px;
+    width: 140px;
     margin-top:4rem;
 }
 
@@ -68,7 +74,7 @@
 
 .image4{
     height:150px;
-    width: 130px;
+    width: 140px;
     margin-top: 12rem;
     padding-bottom: 1rem;
 }

@@ -19,6 +19,7 @@ export default function LandingPage() {
            
             <main className={styles.main}>
             <div className={styles.title}>
+                <img className={styles.homeicon} src='./icons/bluehome.png'></img>
                 <h1 className={styles.header}>Curated For You</h1>
             </div>
                 <div className={styles.carousel}>

@@ -7,7 +7,7 @@ import BackButton from '@/components/BackButton'
 
 export default function Weather() {
     return (
-    <>
+    <div className={styles.container}>
 
 <Head>
         <title>Borderless</title>
@@ -19,13 +19,14 @@ export default function Weather() {
     
     
     
-    <div className={styles.top}>
+
+
+<main className={styles.maincontent}>
+<div className={styles.top}>
     <Link href={'./landingpage'}><BackButton/></Link>
     <h1 className={styles.weather}>Weather</h1>
 </div>
 
-
-    <main className={styles.maincontent}>
         
         
         
@@ -207,7 +208,7 @@ export default function Weather() {
     
     <Footer/>
     
-    </>
+    </div>
     )
 }
     

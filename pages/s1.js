@@ -23,7 +23,7 @@ export default function StoryOne() {
   }
 
     return ( 
-     <>
+     <div className={styles.container}>
 
 <Head>
         <title>Borderless</title>
@@ -34,14 +34,15 @@ export default function StoryOne() {
 
 
 <div className={styles.topsection}>
+
   <h1 className={styles.title}>Stories of Hope and Help</h1>
 </div>
 
 <main className={styles.main}>
 
+<div className={styles.storycontent}>
 
-
-
+           
       
           {information && information.map((info, index) => {
             if(info.region === {region}){
@@ -69,7 +70,7 @@ export default function StoryOne() {
        
        
           
-        
+      
            {information && information.map((info, index) => {
             if(info.region === "Ukraine"){
               return(
@@ -89,17 +90,17 @@ export default function StoryOne() {
                  </div>
                  <Link href={'./stories'}><BackButton/></Link>
                </div>
-             
+         
               )
             }
             })}
         
-   
      
+        </div>
 
       </main>
       <Footer/>
     
-    </>
+    </div>
   )
 }

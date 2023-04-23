@@ -1,10 +1,22 @@
 .main{
-    padding: 2rem;
+    background-color: var( --tertiary-color);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+   
+}
+.storycontent{
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     width: 414px;
-    background-color: var( --tertiary-color);
-  
+    height: 950px;
+    background-color: white;
+    margin-top: 1rem;
 }
 .middleeast{
     display: flex;
@@ -59,3 +71,17 @@
     text-align: center;
     
 }
+
+@media only screen and (min-width: 415px) {
+    .container {
+        display: flex;
+        height: 100vh;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .main {
+        width: 414px;
+        height: 896px;
+    }
+  }

@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 414px;
-    height: 950px;
-
+    overflow-y: scroll;
+    overflow-x: hidden;
 
 }
+
 
 /*SCROLLBAR INVISIBLE*/
 .maincontent::-webkit-scrollbar {
@@ -20,17 +20,16 @@
     flex-direction: column;
     width: 414px;
     background-color: white;
+    padding-top: 3rem;
 }
 .storycontent{
     background-color: white;
-    height: 200vh;
     margin-top: 1rem;
     padding: 1rem;
+    width: 414px;
+    height: 900px;
 }
-.container{
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
+
 
 .header{
     font-family: var(--font-mono);

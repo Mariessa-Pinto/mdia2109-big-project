@@ -28,6 +28,10 @@
     margin-top: 1rem;
     padding: 1rem;
 }
+.container{
+    height: 950px;
+   
+}
 
 .header{
     font-family: var(--font-mono);

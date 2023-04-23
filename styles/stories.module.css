@@ -4,9 +4,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 414px;
-    height: 900px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 950px;
+
 
 }
 
@@ -29,8 +28,8 @@
     padding: 1rem;
 }
 .container{
-    height: 950px;
-   
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .header{

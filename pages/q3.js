@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Q3() {
 
     const [dropDownOpen, setDropDownOpen] = useState(false);
-    const [province, setProvince] = useState('British Columbia');
+    const [province, setProvince] = useState('Select Province/Territory');
     const [clicked, setClicked] = useState(false);
 
     return (
@@ -40,7 +40,7 @@ export default function Q3() {
                         {
                             dropDownOpen ? <>
                                     <ul className={styles.options}>
-                                        <li onClick={() => {setProvince('British Columbia'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>British Columbia (Default)</li>
+                                        <li onClick={() => {setProvince('British Columbia'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>British Columbia</li>
                                         <li onClick={() => {setProvince('Alberta'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Alberta</li>
                                         <li onClick={() => {setProvince('Manitoba'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Manitoba</li>
                                         <li onClick={() => {setProvince('New Brunswick'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>New Brunswick</li>

@@ -11,7 +11,7 @@ export default function Q5({
 }) {
 
     const [dropDownOpen, setDropDownOpen] = useState(false);
-    const [region, setRegion] = useState('North America');
+    const [region, setRegion] = useState('Select Region');
     const [clicked, setClicked] = useState(false);
     const router = useRouter();
     const handleButtonClick = () => {
@@ -52,7 +52,7 @@ export default function Q5({
                         {
                             dropDownOpen ? <>
                                     <ul className={styles.options}>
-                                        <li onClick={() => {setRegion('North America'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>North America (Default)</li>
+                                        <li onClick={() => {setRegion('North America'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>North America</li>
                                         <li onClick={() => {setRegion('Africa'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Africa</li>
                                         <li onClick={() => {setRegion('Asia'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Asia</li>
                                         <li onClick={() => {setRegion('Central America'); setDropDownOpen(!dropDownOpen); setClicked(true)}}>Central America</li>

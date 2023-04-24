@@ -6,6 +6,7 @@ import ImageSlider from '@/components/Carousel'
 
 export default function LandingPage() {
 
+    var title = process.env.NEXT_PUBLIC_HOME;
 
 
     return( 
@@ -20,7 +21,7 @@ export default function LandingPage() {
             <main className={styles.main}>
             <div className={styles.title}>
                 <img className={styles.homeicon} src='./icons/Bluehome.png'></img>
-                <h1 className={styles.header}>Curated For You</h1>
+                <h1 className={styles.header}>{title}</h1>
             </div>
                 <div className={styles.carousel}>
                 <ImageSlider/>

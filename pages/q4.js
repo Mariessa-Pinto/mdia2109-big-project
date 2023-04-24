@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function Q4() {
     
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState(50);
 
     return (
         <div className={styles.container}>

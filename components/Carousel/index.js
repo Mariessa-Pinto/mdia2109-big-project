@@ -2,6 +2,7 @@
 import react, {useState} from 'react';
 import { photos } from '../../data/ImageData'
 import styles from './carousel.module.css'
+import Image from 'next/image';
 
 const ImageSlider = ({ slides }) => {
     const [current, setCurrent] = useState(0)
@@ -31,8 +32,10 @@ return (
                     {index === current && (
                     <div className={styles.main}>
                         <h3 className={styles.headers}>{slide.title}</h3>
-                    <img className={styles.images} 
+                    <Image className={styles.images} 
                      src={slide.Image}  
+                     width={340}
+                     height={150}
                      alt='refugee-images' 
                      /> 
                        
@@ -44,8 +47,8 @@ return (
             );
              })}
                <div className={styles.arrows}>
-            <img className={styles.leftarrow} onClick={prevSlide}   src="/icons/leftArrow.png"/>
-            <img className={styles.rightarrow} onClick={nextSlide}  src="/icons/rightArrow.png"/>
+            <Image className={styles.leftarrow} onClick={prevSlide} width={20} height={20}  src="/icons/leftArrow.png" />
+            <Image className={styles.rightarrow} onClick={nextSlide} width={20} height={20} src="/icons/rightArrow.png"/>
             </div>
         </section>
         

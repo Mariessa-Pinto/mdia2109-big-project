@@ -28,7 +28,7 @@
 }
 
 .header{
-    font-size: 16px;
+    font-size: var(--header);
     font-family: var(--font-mono);
     font-weight: 600;
     width: 350px;

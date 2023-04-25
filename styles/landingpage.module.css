@@ -17,17 +17,30 @@
     background: transparent;
 }
 
+.profilesection{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+
+}
+.profile{
+    margin-top: 2rem;
+    padding-left: 80%;
+}
+
 .title{
   
-    background-color: white;
     display: flex;
     flex-direction: row;
     width: 414px;
     align-items: center;
-    padding-left: 1rem;
+    justify-content: center;
     gap: 1rem;
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 8rem;
+    white-space: nowrap;
    
     
     
@@ -45,12 +58,17 @@
     width: 35px;
     height:35px;
 }
+.icon2{
+    object-fit: contain;
+    margin-top: 2rem;
+
+}
 
 
 
 .header{
     font-family:var(--font-mono);
-    font-size: 20px;
+    font-size: var(--header);
     padding-right: 11rem;
     text-align: center;
  
@@ -58,21 +76,13 @@
 
 .name{
     font-family: var(--font-mono);
+    font-size: 16;
+    word-wrap: break-word;
     padding-top: 10%;
     text-align: center;
 }
 
-.icon{
-    height: 60px;
-    width: 60px;
-}
 
-.icon2{
-    height: 70px;
-    width: 60px;
-  
-  
-}
 
 .section2{
     display: flex;
@@ -80,29 +90,38 @@
     justify-content: space-between;
      margin-top: 0.6rem;
      width: 414px;
+   
 }
 
 .stats{
-    width: 12.625rem;
+    width: 12.8rem;
     background-color: white;
     height: 13.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    padding-top: 2.8rem;
+  
+   
+
+ 
+
 
 }
 .stattext{
-    font-size: xx-small;
+    font-size: 12px;
 }
 .resource{
-    width: 12.625rem;
+    width: 12.8rem;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 1rem;
+ 
+    
 
 }
 .section3{
@@ -115,8 +134,9 @@
 .weather{
     width: 414px;
     background-color:white;
-    height: 10.375rem;
+    height: 8rem;
     margin-top: 0.6rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,7 +147,7 @@
 .stories{
     width: 414px;
     background-color:white;
-    height: 11.375rem;
+    height: 8rem;
     margin-top: 0.6rem;
     display: flex;
     flex-direction: row;
@@ -148,6 +168,7 @@
         width: 414px;
         height: 896px;
     }
+  
   }
 
 

@@ -9,6 +9,9 @@
 
  
 }
+.weather{
+    font-size: var(--header);
+}
 /*SCROLLBAR INVISIBLE*/
 .main::-webkit-scrollbar {
     width: 0px;
@@ -22,9 +25,6 @@
 .container{
     display: flex;
     flex-direction: column;
-
-
-    
 }
 
 

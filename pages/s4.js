@@ -32,6 +32,7 @@ const quizRegion = (regionData) => {
 </Head>
 
 <div className={styles.topsection}>
+
   <h1 className={styles.title}>Stories of Hope and Help</h1>
 </div>
 
@@ -83,6 +84,9 @@ const quizRegion = (regionData) => {
               
          <div className={styles.body2}>
                {info.body}
+        </div>
+        <div className={styles.body2}>
+               {info.bodytwo}
         </div>
         <Link href={'./stories'}><BackButton/></Link>
          </div>

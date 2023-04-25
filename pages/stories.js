@@ -4,6 +4,7 @@ import styles from '@/styles/stories.module.css'
 import Footer from '@/components/Footer'
 import ReadMore from '@/components/ReadMore'
 import Link from 'next/link'
+import BackButton from '@/components/BackButton'
 
 
 export default function Stories() {
@@ -23,8 +24,9 @@ return(
 
 <main className={styles.maincontent}>
 
+
 <div className={styles.top}>
-    
+<Link className={styles.BackButton} href={'./landingpage'}><BackButton/></Link>
 <h1 className={styles.header}>Stories of Hope and Help</h1>
 
 </div>
@@ -33,6 +35,7 @@ return(
 
     
 <div className={styles.storycontent}>
+    <h2 className={styles.intro}>Learn how these organizations are making a difference in the lives of people from your home country.</h2>
 
  <div className={styles.section1}>
       

@@ -9,6 +9,9 @@
 
  
 }
+.weather{
+    font-size: var(--header);
+}
 /*SCROLLBAR INVISIBLE*/
 .main::-webkit-scrollbar {
     width: 0px;

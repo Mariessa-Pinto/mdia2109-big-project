@@ -31,3 +31,13 @@ https://react-chartjs-2.js.org/examples/vertical-bar-chart
 ```
 npm i react-chartjs-2
 ```
+
+## Chart data resource
+https://www.unhcr.org/about-unhcr/who-we-are/figures-glance
+
+## Story Resources
+https://www.unhcr.org/
+https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees.html
+https://pirs.bc.ca/
+https://www.redcross.ca/
+

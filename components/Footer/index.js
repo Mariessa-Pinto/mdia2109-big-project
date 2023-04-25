@@ -25,7 +25,7 @@ export default function Footer() {
               width={43}
               height={38}
             />
-            <h2 className={styles.name}>Resources</h2>
+            <h2 className={styles.name}>Support</h2>
           </div></Link>
           <Link href={'/stories'}><div className={styles.link}>
             <Image

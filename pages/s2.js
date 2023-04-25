@@ -34,6 +34,7 @@ export default function StoryTwo() {
 </Head>
 
 <div className={styles.topsection}>
+
   <h1 className={styles.title}>Stories of Hope and Help</h1>
 </div>
 
@@ -86,6 +87,9 @@ export default function StoryTwo() {
          <div className={styles.body2}>
                {info.body}
         </div>
+        <div className={styles.body2}>
+          {info.bodytwo}
+          </div>
         <Link href={'./stories'}><BackButton/></Link>
          </div>
            

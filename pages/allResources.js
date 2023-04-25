@@ -54,6 +54,7 @@ export default function AllResources() {
                                     location={info.location}
                                     contact={info.contact}
                                     img={info.image}
+                                    icon={info.icon}
                                 />
                             </div>
                         )

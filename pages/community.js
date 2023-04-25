@@ -43,6 +43,7 @@ export default function Community() {
                                     location={info.location}
                                     contact={info.contact}
                                     img={info.image}
+                                    icon={info.icon}
                                 />
                             </div>
                         )

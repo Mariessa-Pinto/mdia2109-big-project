@@ -1,12 +1,14 @@
 .resourceCard {
     width: 100%;
-    height: 15.063rem;
+    height: auto;
+    max-height: 20rem;
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: row;
     margin-top: 0.625rem;
-    justify-content: space-between;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 2rem 0;
 }
 
 .leftSide {
@@ -14,13 +16,20 @@
     flex-direction: column;
     padding-left: 2rem;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.25rem;
+    max-width: 16rem;
 }
 
 .rightSide {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding-right: 2rem;
+    gap: 1rem;
+}
+
+.icon {
+    margin-left: 6rem;
 }
 
 .image{
@@ -29,18 +38,19 @@
 }
 
 .header {
-    font-size: 24px;
+    font-size: var(--header);
 }
 
 .resource {
-    font-size: 11px;
-    font-weight: 700;
+    font-size: var(--body);
+    font-weight: var(--semibold);
 }
 
 .location {
-    font-size: 12px;
+    font-size: var(--location-text);
 }
 
 .text {
-    font-size: 12px;
+    font-size: var(--body);
+    font-weight: var(--semibold);
 }

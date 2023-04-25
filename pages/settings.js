@@ -54,6 +54,19 @@ return (
                         <p className={styles.text}>Messages, tones</p>
                     </div>
                 </div>
+                <Link href={'/faq'}><div className={styles.card}>
+                    <div className={styles.icon}>
+                        <Image
+                            src={'/icons/FAQ.svg'}
+                            alt={'FAQ icon'}
+                            width={30}
+                            height={30}
+                        />
+                    </div>
+                    <div className={styles.titles}>
+                        <h3 className={styles.subheader}>FAQ</h3>
+                    </div>
+                </div></Link>
                 <div className={styles.card}>
                     <div className={styles.icon}>
                         <Image
@@ -81,19 +94,6 @@ return (
                         <h3 className={styles.subheader}>Dark Mode/Light Mode</h3>
                     </div>
                 </div>
-                <Link href={'/faq'}><div className={styles.card}>
-                    <div className={styles.icon}>
-                        <Image
-                            src={'/icons/FAQ.svg'}
-                            alt={'FAQ icon'}
-                            width={30}
-                            height={30}
-                        />
-                    </div>
-                    <div className={styles.titles}>
-                        <h3 className={styles.subheader}>FAQ</h3>
-                    </div>
-                </div></Link>
             <Footer/>
             </div>
         </div>

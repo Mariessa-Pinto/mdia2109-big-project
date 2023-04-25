@@ -7,6 +7,7 @@ import ImageSlider from '@/components/Carousel'
 
 export default function LandingPage() {
 
+    var title = process.env.NEXT_PUBLIC_HOME;
 
 
     return( 
@@ -17,7 +18,7 @@ export default function LandingPage() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-           
+
 <main className={styles.main}>
 <div className={styles.profilesection}>
 <Link href={'/settings'}>
@@ -29,6 +30,9 @@ export default function LandingPage() {
                     alt='profile'
                 
                    />
+
+          
+
             </div>
 </Link>
     <div className={styles.title}>
@@ -37,7 +41,7 @@ export default function LandingPage() {
         height={60}
         width={60}
          />
-        <h1 className={styles.header}>Curated For You</h1>
+             <h1 className={styles.header}>{title}</h1>
      </div>
 </div>
                 <div className={styles.carousel}>

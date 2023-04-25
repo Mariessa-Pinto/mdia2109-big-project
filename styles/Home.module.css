@@ -1,23 +1,18 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 4rem;
   align-items: center;
-  padding: 6rem;
+  padding: 6rem 2rem 18rem 2rem;
   min-height: 100vh;
   background-color:var(--secondary-color);
 }
 
-.describer{
-  display: flex;
-  flex-direction: column;
-  width: 414px;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.skip{
-  margin-left: 15rem;
+.header {
+  font-size: var(--headerTwo);
+  font-weight: 500;
+  text-align: center;
 }
 
 @media only screen and (min-width: 415px) {

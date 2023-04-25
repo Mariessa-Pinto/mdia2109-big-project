@@ -6,7 +6,8 @@ export default function ResourceCard({
     resource="",
     location="",
     contact="",
-    img=""
+    img="",
+    icon=''
 }) {
     return (
         <>
@@ -19,6 +20,13 @@ export default function ResourceCard({
             </div>
             <div className={styles.rightSide}>
                 <Image
+                    className={styles.icon}
+                    src={icon}
+                    alt={'icon of resource'}
+                    width={30}
+                    height={30}
+                />
+                <Image
                     className={styles.image}
                     src={img}
                     alt={'image of resource'}
@@ -26,7 +34,6 @@ export default function ResourceCard({
                     height={120}
                 />
             </div>
-
         </div>
         </>
     )

@@ -1,12 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import Link from 'next/link'
-import QuizButton from '@/components/QuizButton'
-import SkipButton from '@/components/SkipButton'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 
 export default function Home() {
+
+  const router = useRouter();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      router.replace("/quizIntro")
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -21,10 +30,8 @@ export default function Home() {
           alt={'borderless logo'}
           width={160}
           height={160}
-
-          
         />
-        <Link href={"/quizIntro"}>Next</Link> 
+        <h3 className={styles.header}>Compassion knows no borders</h3>
       </main>
     </div>
   )

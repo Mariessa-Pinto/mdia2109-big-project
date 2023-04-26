@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import BackButton from '@/components/BackButton'
 import ResourceCard from '@/components/ResourceCard'
 import { resourceData } from '@/data/ResourceData.js'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function AllResources() {
 
@@ -16,6 +16,13 @@ export default function AllResources() {
         ...resourceData.shelter,
         ...resourceData.food
     ]);
+
+    const [isProvince, setIsProvince] = useState(null);
+
+    useEffect(() => {
+      const province = localStorage.getItem('province');
+      setIsProvince(province);
+    }, []);
 
     return (
         <div className={styles.container}>
@@ -44,7 +51,7 @@ export default function AllResources() {
             </div>
             {
                 resourceType && resourceType.map((info, index) => {
-                    if(info.province === "BC") {
+                    if(info.province === isProvince) {
                         return (
                             <div>
                                 <ResourceCard

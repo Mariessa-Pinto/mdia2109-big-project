@@ -4,23 +4,23 @@ import SkipButton from '@/components/SkipButton'
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 
-export default function Q5({
-    passRegion
-}) {
+export default function Q5() {
 
     const [dropDownOpen, setDropDownOpen] = useState(false);
-    const [region, setRegion] = useState('Select Region');
+    const [region, setRegion] = useState(null);
     const [clicked, setClicked] = useState(false);
-    const router = useRouter();
-    const handleButtonClick = () => {
-        router.push({
-            pathname:'/s1',
-            query: {region},
-        });
-        setClicked(true);
-    }
+
+    const [isregion, setIsRegion] = useState(null);
+
+    const CheckRegion = () => {
+        console.log(region)
+
+        if(region !== null) {
+            localStorage.setItem('region', region);
+            setIsRegion(region);
+        }
+    };
 
 
     return (
@@ -41,7 +41,7 @@ export default function Q5({
                 <div className={styles.questionSection}>
                     <h2 className={styles.question}>What region are you originally from?</h2>
                         <button className={styles.answerButton}>
-                            {region} 
+                            {region ? region : 'Select Region'} 
                         <Image
                             src={'/icons/downArrow.svg'}
                             alt={'down arrow'}
@@ -71,7 +71,7 @@ export default function Q5({
                 <div className={styles.controls}>
                     <Link href={'./q4'}><BackButton/></Link>
                     {
-                        clicked ? <><Link href={'/landingpage'}><button className={styles.nextButton} onClick={handleButtonClick}>Submit</button></Link></> : <></>
+                        clicked ? <><Link href={'/landingpage'}><button className={styles.nextButton} onClick={() => CheckRegion()}>Submit</button></Link></> : <></>
                     }
                 </div>
             </div>

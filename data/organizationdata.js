@@ -12,7 +12,7 @@ unhcr: [
      
      {
      organization: "The UN Refugee Agency",
-     region: "Ukraine",
+     region: "Eastern Europe",
      title: "UNHCR and TikTok launch campaign in solidarity with refugees from Ukraine and beyond",
      body:"The UN Refugee Agency (UNHCR) and TikTok have teamed up to launch a music campaign promoting solidarity with refugees globally. The campaign starts with #TheWorldNeeds, a global hashtag challenge, followed by a series of TikTok LIVE concerts from May 4 to May 7.",
      bodytwo:"The campaign invites creators, artists, and communities to spread a message of global support for refugees, calling for safe and legal access to asylum for all. Dionne Warwick’s iconic track “What The World Needs Now (Is Love)” is the centerpiece of the #TheWorldNeeds global hashtag challenge. UNHCR invites the TikTok community to join the challenge and bring their creativity to life to show their support and solidarity for those forced to flee. The donations from the challenge will fund UNHCR’s critical programs, from emergency response to sustaining support for refugees, in the form of shelter, healthcare and nutrition, income generation, education, legal assistance and protection. #TheWorldNeeds challenge and live concerts are a virtual equivalent of World Stars Festival for the 21st century, harnessing the power of artists and creators around the world to show support for people who have been forced to flee their homes.",
@@ -33,7 +33,7 @@ unhcr: [
 
      {
         organization: "The Pacific Immigrant Resource Society",
-        region: "Ukraine",
+        region: "Eastern Europe",
         title: "New West organizations team up to support Ukrainian crisis response",
         body:"Local organizations in New Westminster are collaborating to provide support to the Ukrainian community during the ongoing crisis.The Welcoming and Inclusive New Westminster Local Immigrant Partnership Council (WINS LIP) and the City of New Westminster are working with Holy Eucharist Cathedral to coordinate response efforts and provide resources to Ukrainian families both locally and abroad.",
         bodytwo:"Holy Eucharist Cathedral is acting as an informal hub for crisis response in New Westminster and beyond, managing the Help Us Help Ukraine donation program, and developing a database of offers of support from across the province. Key needs identified include temporary housing, clothing and household items, employment and financial assistance, food security programming, mental health support, language services, and child care. The City of New Westminster is establishing a working group to coordinate response efforts and plans to apply the learnings to future initiatives supporting displaced individuals from other regions experiencing conflict.",
@@ -57,7 +57,7 @@ unhcr: [
 
      {
         organization: "The Canadian Redcross",
-        region: "Ukraine",
+        region: "Eastern Europe",
         title: "Ukraine Humanitarian Crisis Appeal urgently requires winterization support as temperatures plummet",
         body:"The conflict in Ukraine has left 17.7 million people in need of urgent aid, with 4 million people facing extreme vulnerability as winter adds another layer of danger.",
         bodytwo:"The Canadian Red Cross is launching the Ukraine Humanitarian Crisis Appeal to provide winterization support, such as emergency power supplies, sleeping kits, kitchen sets, solid fuel burning stoves, warm clothing, and emergency shelter repair kits, to help keep people warm as the conflict continues. The Red Cross has already provided five million people with emergency relief items, and has supported health facilities with medical equipment, tools, and medication. The appeal will also help acquire generators to keep critical infrastructure like hospitals and trains operational.",
@@ -81,7 +81,7 @@ unhcr: [
 
      {
         organization: "The Government Of Canada",
-        region: "Ukraine",
+        region: "Eastern Europe",
         title: "Russia being able to 'bring down' Canadian gov't websites won't dissuade support for Ukraine: Trudeau",
         body:"Russian hackers attempted to bring down Canadian government websites, including the prime minister's website, as Canada continues to show support for Ukraine.",
         bodytwo:"The attacks, which include distributed denial-of-service attacks, occurred on Monday and caused some government websites to fail to load. The Canadian government, like other organizations around the world, is subject to persistent cyber threats, according to a Communications Security Establishment spokesperson. The government is collaborating across departments to monitor, detect, investigate, and neutralize potential threats. Despite the attacks, Prime Minister Justin Trudeau said that Canada's support for Ukraine remains unwavering.",

@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Q3() {
 
     const [dropDownOpen, setDropDownOpen] = useState(false);
-    const [province, setProvince] = useState('Select Province/Territory');
+    const [province, setProvince] = useState(null);
     const [clicked, setClicked] = useState(false);
   
 
@@ -25,6 +25,17 @@ export default function Q3() {
         }
     };
 
+
+    const [isProvince, setIsProvince] = useState(null);
+
+    const CheckProvince = () => {
+        console.log(province)
+
+        if(province !== null) {
+            localStorage.setItem('province', province);
+            setIsProvince(province);
+        }
+    };
 
     return (
         <div className={styles.container}>
@@ -44,7 +55,7 @@ export default function Q3() {
                 <div className={styles.questionSection}>
                     <h2 className={styles.question}>What province do you reside in?</h2>
                         <button className={styles.answerButton}>
-                            {province} 
+                            {province ? province : 'Select Province/Territory'} 
                         <Image
                             src={'/icons/downArrow.svg'}
                             alt={'down arrow'}
@@ -76,7 +87,10 @@ export default function Q3() {
                 <div className={styles.controls}>
                     <Link href={'./q2'}><BackButton/></Link>
                     {
-                        clicked ? <><Link href={'./q4'}><button className={styles.nextButton}onClick={() => CheckProvince()}>Next</button></Link></> : <></>
+      
+
+                        clicked ? <><Link href={'./q4'}><button className={styles.nextButton} onClick={() => CheckProvince()}>Next</button></Link></> : <></>
+
                     }
                 </div>
             </div>

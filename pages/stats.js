@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/stats.module.css'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
+import { useEffect } from 'react'
 import Link from 'next/link'
 import MaleChart from '@/components/MaleChart'
 import BackButton from '@/components/BackButton'
@@ -10,7 +11,18 @@ import FemaleChart from '@/components/FemaleChart'
 import UniversalChart from '@/components/UniversalChart'
 
 
+
 export default function Stats() {
+
+
+    const [isAge, setIsAge] = useState(null);
+
+    useEffect(() => {
+      const age = localStorage.getItem('age');
+      setIsAge(age);
+    }, []);
+
+    console.log(isAge);
     return (
     <div className={styles.container}>
      <Head>
@@ -29,20 +41,13 @@ export default function Stats() {
             <p className={styles.body}>Our goal is to provide you with data and statistics that encourage you and shed light on the progress being made by Canadian Refugees</p>
         </div>
         <div className={styles.charts}>
-
-
-            <MaleChart/>
+        {isAge === '18 and under' && <FemaleChart />}
+        {isAge === '19-25' && <MaleChart />}
+        {isAge === '26-39' && <UniversalChart />}
+        {isAge === '40+' && <UniversalChart/> }
             
-            
-            <FemaleChart/>
-            
-            
-            
-            <UniversalChart/>
-       
-       
-       
-        </div>
+         
+          </div>
     </main>
     <Footer/>
     </div>

@@ -4,10 +4,20 @@ import styles from '@/styles/landingpage.module.css'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import ImageSlider from '@/components/Carousel'
-
+import OntarioSlider from '@/components/OntarioCarousel'
+import { useState } from 'react'
+import { useEffect } from 'react'
 export default function LandingPage() {
 
     var title = process.env.NEXT_PUBLIC_HOME;
+    const [isProvince, setIsProvince] = useState(null);
+
+    useEffect(() => {
+      const province = localStorage.getItem('province');
+      setIsProvince(province);
+    }, []);
+
+    console.log(isProvince);
 
 
     return( 
@@ -45,7 +55,11 @@ export default function LandingPage() {
      </div>
 </div>
                 <div className={styles.carousel}>
-                <ImageSlider/>
+                {isProvince === 'British Columbia' && <ImageSlider/>}
+                {isProvince === 'Ontario' && <OntarioSlider/>}
+             
+                
+              
                 </div>
                 <div className={styles.section2}>
                     <div className={styles.stats}>

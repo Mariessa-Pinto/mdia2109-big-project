@@ -10,6 +10,21 @@ export default function Q3() {
     const [dropDownOpen, setDropDownOpen] = useState(false);
     const [province, setProvince] = useState('Select Province/Territory');
     const [clicked, setClicked] = useState(false);
+  
+
+
+
+
+    const [isprovince, setIsProvince] = useState(null);
+    const CheckProvince = () => {
+        console.log(province)
+
+        if(province !== null) {
+            localStorage.setItem('province', province);
+            setIsProvince(province);
+        }
+    };
+
 
     return (
         <div className={styles.container}>
@@ -61,7 +76,7 @@ export default function Q3() {
                 <div className={styles.controls}>
                     <Link href={'./q2'}><BackButton/></Link>
                     {
-                        clicked ? <><Link href={'./q4'}><button className={styles.nextButton}>Next</button></Link></> : <></>
+                        clicked ? <><Link href={'./q4'}><button className={styles.nextButton}onClick={() => CheckProvince()}>Next</button></Link></> : <></>
                     }
                 </div>
             </div>

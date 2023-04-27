@@ -2,7 +2,7 @@ export const pictures = [
     {
         id: 0, 
         Image: '/carousel-images/3.jpeg',
-        title: 'Witness Niagra Falls',
+        title: 'Experience Niagra Falls',
     
     },
     {

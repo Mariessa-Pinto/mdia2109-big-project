@@ -10,21 +10,6 @@ export default function Q3() {
     const [dropDownOpen, setDropDownOpen] = useState(false);
     const [province, setProvince] = useState(null);
     const [clicked, setClicked] = useState(false);
-  
-
-
-
-
-    const [isprovince, setIsProvince] = useState(null);
-    const CheckProvince = () => {
-        console.log(province)
-
-        if(province !== null) {
-            localStorage.setItem('province', province);
-            setIsProvince(province);
-        }
-    };
-
 
     const [isProvince, setIsProvince] = useState(null);
 

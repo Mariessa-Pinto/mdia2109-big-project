@@ -49,6 +49,9 @@ export default function StoryTwo() {
                       <div className={styles.body}>
                         {info.body}
                       </div>
+                      <div className={styles.body}>
+                        {info.bodytwo}
+                      </div>
                       <Link href={'./stories'}><BackButton/></Link>
                     </div>
                   )

@@ -5,8 +5,20 @@ import { useState } from 'react'
 import Link from 'next/link';
 
 export default function Q1() {
+    const [age, setAge] = useState(null);
 
     const [clicked, setClicked] = useState(false);
+
+
+    const [isage, setIsAge] = useState(null);
+    const CheckAge = () => {
+        console.log(age)
+
+        if(age !== null) {
+            localStorage.setItem('age', age);
+            setIsAge(age);
+        }
+    };
 
     const [uClicked, setUClicked] = useState(false);
     const underClassName = uClicked ? `${styles["answerButtonActive"]} ${styles.answerButton}` : styles.answerButton;
@@ -35,16 +47,16 @@ export default function Q1() {
                 </div>
                 <div className={styles.questionSection}>
                     <h2 className={styles.question}>How old are you?</h2>
-                        <button onClick={() => {setClicked(!clicked); setUClicked(!uClicked)}} className={underClassName}>18 and under</button>
-                        <button onClick={() => {setClicked(!clicked); setNClicked(!nClicked)}} className={nineteenClassName}>19-25</button>
-                        <button onClick={() => {setClicked(!clicked); setTClicked(!tClicked)}} className={twentyClassName}>26-39</button>
-                        <button onClick={() => {setClicked(!clicked); setFClicked(!fClicked)}} className={fortyClassName}>40+</button>
+                        <button onClick={() => {setAge('18 and under'); {setClicked(!clicked); setUClicked(!uClicked)}}}className={underClassName}>18 and under</button>
+                        <button onClick={() =>{setAge('19-25'); {setClicked(!clicked); setNClicked(!nClicked)}}}className={nineteenClassName}>19-25</button>
+                        <button onClick={() =>{setAge('26-39'); {setClicked(!clicked); setTClicked(!tClicked)}}} className={twentyClassName}>26-39</button>
+                        <button onClick={() =>{setAge('40+'); {setClicked(!clicked); setFClicked(!fClicked)}}} className={fortyClassName}>40+</button>
                 </div>
                 <div className={styles.seperator}></div>
                 <div className={styles.controls}>
                     <Link href={''}><BackButton/></Link>
                     {
-                        clicked ? <><Link href={'./q2'}><button className={styles.nextButton}>Next</button></Link></> : <></>
+                        clicked ? <><Link href={'./q2'}><button className={styles.nextButton}onClick={() => CheckAge()}>Next</button></Link></> : <></>
                     }
                 </div>
             </div>

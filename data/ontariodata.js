@@ -1,4 +1,4 @@
-export const photos = [
+export const pictures = [
     {
         id: 0, 
         Image: '/carousel-images/3.jpeg',

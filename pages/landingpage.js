@@ -94,7 +94,7 @@ export default function LandingPage() {
                         alt='stories'
                    
                         />
-                        <Link className={styles.name} href={"/stories"}>Stories of Hope and Help</Link>
+                        <Link className={styles.name} href={"/stories"}>Stories of Hope</Link>
                 </div>
                     <div className={styles.weather}>
                         <Image className={styles.icon} 

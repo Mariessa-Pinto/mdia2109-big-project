@@ -27,7 +27,7 @@ export default function StoryFour() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.topsection}>
-        <h1 className={styles.title}>Stories of Hope and Help</h1>
+        <h1 className={styles.title}>Stories of Hope</h1>
       </div>
       <main className={styles.main}>
         <div className={styles.storycontent}>

@@ -27,7 +27,7 @@ return(
 
 <div className={styles.top}>
 <Link className={styles.BackButton} href={'./landingpage'}><BackButton/></Link>
-<h1 className={styles.header}>Stories of Hope and Help</h1>
+<h1 className={styles.header}>Stories of Hope</h1>
 
 </div>
 

@@ -1,6 +1,6 @@
 
 import react, {useState} from 'react';
-import { pictures } from '@/data/OntarioData'
+import { pictures } from '../../data/OntarioData'
 import styles from './OntarioCarousel.module.css'
 import Image from 'next/image';
 

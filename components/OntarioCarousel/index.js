@@ -1,12 +1,12 @@
 
 import react, {useState} from 'react';
-import { photos } from '../../data/ontariodata'
+import { pictures } from '../../data/ontariodata'
 import styles from './OntarioCarousel.module.css'
 import Image from 'next/image';
 
 const OntarioSlider = ({ slides }) => {
     const [current, setCurrent] = useState(0)
-    const length = photos.length
+    const length = pictures.length
   
 
     
@@ -25,7 +25,7 @@ const OntarioSlider = ({ slides }) => {
 return (
         <section>
           
-        {photos.map((slide, index) => {
+        {pictures.map((slide, index) => {
             return(
                 <div className={styles.pictures}>
                 <div className={index === current ? 'slide active' : 'slide'} key = {index}>

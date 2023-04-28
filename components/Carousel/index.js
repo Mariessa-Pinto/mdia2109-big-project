@@ -38,6 +38,7 @@ return (
                      height={150}
                      alt='refugee-images' 
                      /> 
+                     <h4 className={styles.describer}>{slide.paragraph}</h4>
                        
                   </div>
                     )}

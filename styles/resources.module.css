@@ -22,8 +22,7 @@
     align-items: flex-end;
     padding-bottom: 1rem;
     justify-content: center;
-    gap: 5rem;
-    padding-left: 5rem;
+    gap: 3.5rem;
 }
 
 .resources {
@@ -95,6 +94,12 @@
 
 .header {
     font-size: var(--header);
+    padding-right: 2rem;
+}
+
+.footer {
+    position: unset;
+    bottom: unset;
 }
 
 @media only screen and (min-width: 415px) {

@@ -1,6 +1,6 @@
 
 import react, {useState} from 'react';
-import { pictures } from '@/data/ontariodata.js'
+import { pictures } from '../../data/OntarioData.js'
 import styles from './OntarioCarousel.module.css'
 import Image from 'next/image';
 
@@ -32,12 +32,14 @@ return (
                     {index === current && (
                     <div className={styles.main}>
                         <h3 className={styles.headers}>{slide.title}</h3>
+                        
                     <Image className={styles.images} 
                      src={slide.Image}  
                      width={340}
                      height={150}
                      alt='refugee-images' 
                      /> 
+                     <h4 className={styles.describer}>{slide.paragraph}</h4>
                        
                   </div>
                     )}

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import styles from '@/styles/resources.module.css'
 import Footer from '@/components/Footer'
+import BackButton from '@/components/BackButton'
 
 export default function Resources() {
 
@@ -16,6 +17,7 @@ return(
     </Head>
     <div className={styles.main}>
         <div className={styles.title}>
+            <Link href={'/landingpage'}><BackButton/></Link>
             <h1 className={styles.header}>Resources</h1>
             <Image
                 src={'/icons/searchIcon.svg'}
@@ -73,7 +75,7 @@ return(
             <h2 className={styles.subheader}>Community</h2>
             </div></Link>
         </div>
-        <Footer/>
+        <Footer className={styles.footer}/>
     </div>
     </div>
 )

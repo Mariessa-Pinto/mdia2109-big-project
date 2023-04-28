@@ -19,7 +19,6 @@ export default function LandingPage() {
 
     console.log(isProvince);
 
-
     return( 
         <div className={styles.container}>
             <Head>
@@ -28,89 +27,80 @@ export default function LandingPage() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-<main className={styles.main}>
-<div className={styles.profilesection}>
-<Link href={'/settings'}>
-            <div className={styles.profile}>
-                    <Image
-                    src='/icons/profile.png'
-                    height={40}
-                    width={40}
-                    alt='profile'
-                
-                   />
-
-          
-
-            </div>
-</Link>
-    <div className={styles.title}>
-         <Image className={styles.homeicon} 
-        src='/icons/Bluehome.png'
-        height={60}
-        width={60}
-         />
-             <h1 className={styles.header}>{title}</h1>
-     </div>
-</div>
+            <main className={styles.main}>
+                <div className={styles.profilesection}>
+                    <Link href={'/settings'}>
+                        <div className={styles.profile}>
+                            <Image
+                                src={'/icons/profile.png'}
+                                height={40}
+                                width={40}
+                                alt={'profile'}    
+                            />
+                        </div>
+                    </Link>
+                    <div className={styles.title}>
+                        <Image className={styles.homeicon} 
+                            src={'/icons/Bluehome.png'}
+                            height={60}
+                            width={60}
+                            alt={'home icon'}
+                        />
+                        <h1 className={styles.header}>{title}</h1>
+                    </div>
+                </div>
                 <div className={styles.carousel}>
-                {isProvince === 'British Columbia' && <ImageSlider/>}
-                {isProvince === 'Ontario' && <OntarioSlider/>}
-             
-                
-              
+                    {
+                        isProvince === 'British Columbia' && <ImageSlider/>
+                    }
+                    {
+                        isProvince === 'Ontario' && <OntarioSlider/>
+                    }
                 </div>
                 <div className={styles.section2}>
-                    <div className={styles.stats}>
+                    <Link href={"/statsDashboard"}><div className={styles.stats}>
                         <Image className={styles.icon} 
-                        src='/icons/graph.png'
-                        height={60}
-                        width={60}
-                        alt='graph'
-                
+                            src={'/icons/graph.png'}
+                            height={60}
+                            width={60}
+                            alt={'graph'}
                         />
-                        <Link className={styles.name} href={"/stats"}>Empowering Data</Link>
+                        <h3 className={styles.name}>Empowering Data</h3>
                         <p className={styles.stattext}>How you help Canada grow</p>
-                    </div>
-                    <div className={styles.resource}>
+                    </div></Link>
+                    <Link href={"/resources"}><div className={styles.resource}>
                         <Image className={styles.icon2} 
-                        src='/icons/heart.png'
-                        alt='heart'
-                        height={60}
-                        width={60}
-                     
+                            src={'/icons/heart.png'}
+                            alt={'heart'}
+                            height={60}
+                            width={60}
                          />
-                        <Link className={styles.name} href={"/resources"}>Local Support</Link>
+                        <h3 className={styles.name}>Local Support</h3>
                         <p className={styles.stattext}>Find help in your area</p>
-                    </div>
+                    </div></Link>
                 </div>
                 <div className={styles.section3}>
-                <div className={styles.stories}>
+                    <Link href={"/stories"}><div className={styles.stories}>
                         <Image className={styles.icon} 
-                        src='/icons/dashboardstories.png'
-                        height={60}
-                        width={60}
-                        alt='stories'
-                   
+                            src={'/icons/dashboardstories.png'}
+                            height={60}
+                            width={60}
+                            alt={'stories'}
                         />
-                        <Link className={styles.name} href={"/stories"}>Stories of Hope</Link>
-                </div>
-                    <div className={styles.weather}>
+                        <h3 className={styles.name}>Stories of Hope</h3>
+                    </div></Link>
+                    <Link href={"/weather"}><div className={styles.weather}>
                         <Image className={styles.icon} 
-                        src='/icons/umbrella.png'
-                        height={60}
-                        width={60}
-                        alt='umbrella'
-                     
+                            src={'/icons/umbrella.png'}
+                            height={60}
+                            width={60}
+                            alt={'umbrella'}
                         />
-                        <Link className={styles.name} href={"/weather"}>Weather From Home</Link>
-                </div>
-                 
+                        <h3 className={styles.name}>Weather From Home</h3>
+                    </div></Link>
                 </div>
                 <Footer/>
             </main>
-
         </div>  
     )
 }

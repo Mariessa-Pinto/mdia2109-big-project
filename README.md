@@ -14,30 +14,22 @@
 - npm run dev 
 
 ## Resources
+### Chart data resource
+[UNHCR Who We Are Figures](https://www.unhcr.org/about-unhcr/who-we-are/figures-glance)
 
-### Female Chart Data 
-[Name that displays](url)
-
-### Male Chart Data 
-[Name that displays](url)
-
-### Universal Chart Data 
-[Name that displays](url)
+### Story Resources
+[UNHCR Stories](https://www.unhcr.org/)
+[Government of Canada Stories](https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees.html)
+[Pacific Immigration Resource Society](https://pirs.bc.ca/)
+[Canadian Red Cross](https://www.redcross.ca/)
 
 ## Packages/Dependencies 
-
 ### Chartjs
 https://react-chartjs-2.js.org/examples/vertical-bar-chart
 ```
 npm i react-chartjs-2
 ```
 
-## Chart data resource
-https://www.unhcr.org/about-unhcr/who-we-are/figures-glance
 
-## Story Resources
-https://www.unhcr.org/
-https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees.html
-https://pirs.bc.ca/
-https://www.redcross.ca/
+
 

@@ -1,6 +1,5 @@
 .container{
   width: 414px;
-  height: 75px;
   background-color: var(--quinary-color);
   position: fixed;
   bottom: 0;

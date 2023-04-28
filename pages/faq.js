@@ -18,33 +18,32 @@ export default function FAQ() {
 
     return (
         <div className={styles.container}>
-        <div className={styles.main}>
-            <div className={styles.title}>
-                <h1 className={styles.header}>FAQ</h1>
-                <div className={styles.back}>
-                    <Link href={'/settings'}><BackButton/></Link>
+            <div className={styles.main}>
+                <div className={styles.title}>
+                    <h1 className={styles.header}>FAQ</h1>
+                    <div className={styles.back}>
+                        <Link href={'/settings'}><BackButton/></Link>
+                    </div>
                 </div>
-            </div>
-            <div>
-            {
-            data && data.map((info, index) => {
-                return(
-                <div className={styles.questions} key={index}>
-                    <FAQAccordion 
-                        question={info.question} 
-                        answer={info.answer}
-                        isActive={activeIndex === index}
-                        setIsActive={() => handleAccordionClick(index)}
-                        index ={index}
-                    />
+                <div>
+                {
+                data && data.map((info, index) => {
+                    return(
+                    <div className={styles.questions} key={index}>
+                        <FAQAccordion 
+                            question={info.question} 
+                            answer={info.answer}
+                            isActive={activeIndex === index}
+                            setIsActive={() => handleAccordionClick(index)}
+                            index ={index}
+                        />
+                    </div>
+                    )
+                })
+                }
                 </div>
-                )
-            })
-            }
+                <Footer className={styles.footer}/>
             </div>
-        
-        <Footer/>
-        </div>
         </div>
     )
 }

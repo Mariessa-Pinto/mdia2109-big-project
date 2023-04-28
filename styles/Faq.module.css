@@ -1,7 +1,7 @@
 .main {
     background-color: var(--tertiary-color);
     width: 414px;
-    height: 896px;
+    height: 956px;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom: 4rem;
@@ -38,6 +38,11 @@
     margin-top: 0.625rem;
 }
 
+.footer {
+    position: unset;
+    bottom: unset;
+}
+
 @media only screen and (min-width: 415px) {
     .container {
         display: flex;
@@ -48,7 +53,7 @@
     }
     .main {
         width: 414px;
-        height: 896px;
+        height: 956px;
         padding-bottom: 0;
     }
   }

@@ -27,6 +27,7 @@ export default function StoryTwo() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.topsection}>
+          <Link href={'./stories'}><BackButton/></Link>
           <h1 className={styles.title}>Stories of Hope</h1>
         </div>
         <main className={styles.main}>
@@ -52,7 +53,6 @@ export default function StoryTwo() {
                       <div className={styles.body}>
                         {info.bodytwo}
                       </div>
-                      <Link href={'./stories'}><BackButton/></Link>
                     </div>
                   )
                 }

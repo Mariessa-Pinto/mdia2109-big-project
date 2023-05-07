@@ -7,6 +7,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
 .container{
     height: 950px;
 }
@@ -18,7 +19,7 @@
 }
 
 .profilesection{
-    background-color: white;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     height: 150px;
@@ -42,7 +43,7 @@
 }
 
 .carousel{
-    background-color: white;
+    background-color: var(--secondary-color);
     width: 414px;
     padding: 2rem;
     margin-top: 0.6rem;
@@ -85,7 +86,7 @@
 
 .stats{
     width: 203px;
-    background-color: white;
+    background-color: var(--secondary-color);
     height: 205px;
     display: flex;
     flex-direction: column;
@@ -100,7 +101,7 @@
 
 .resource{
     width: 203px;
-    background-color: white;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +117,7 @@
 
 .weather{
     width: 414px;
-    background-color:white;
+    background-color: var(--secondary-color);
     height: 130px;
     margin-top: 0.625rem;
     padding-bottom: 1rem;
@@ -129,7 +130,7 @@
 
 .stories{
     width: 414px;
-    background-color:white;
+    background-color: var(--secondary-color);
     height: 151px;
     margin-top: 0.625rem;
     display: flex;

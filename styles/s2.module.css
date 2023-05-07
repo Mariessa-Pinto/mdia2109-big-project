@@ -2,27 +2,32 @@
     background-color: var( --tertiary-color);
     overflow-y: scroll;
     overflow-x: hidden;
-  
 }
+
+/*SCROLLBAR INVISIBLE*/
+.main::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 .container{
     display: flex;
     flex-direction: column;
-   
 }
+
 .storycontent{
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     width: 414px;
-    height: 950px;
-    background-color: white;
-    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    margin-top: 0.625rem;
 }
+
 .middleeast{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    
 }
 
 .header{
@@ -37,14 +42,13 @@
     width: 350px;
 }
 
-
 .ukraine{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding-top: 2rem;
-
 }
+
 .header2{
     font-size: 16px;
     font-family: var(--font-mono);
@@ -58,11 +62,16 @@
 }
 
 .topsection{
-    padding: 2rem;
+    height: 113px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-right: 5rem;
+    gap: 1.5rem;
     width: 414px;
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 .title{

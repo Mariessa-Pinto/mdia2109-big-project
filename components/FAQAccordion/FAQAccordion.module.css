@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .questionChevron {
@@ -25,4 +26,8 @@
 .faqActive .questionBar {
     padding-left: 0;
     padding-right: 0;
+}
+
+.controls {
+    cursor: pointer;
 }

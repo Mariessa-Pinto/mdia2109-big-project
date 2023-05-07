@@ -1,45 +1,42 @@
-.pictures{
+.pictures {
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: space-evenly;
 }
 
-.images{
+.images {
     width: 340px;
     height: 150px;
     object-fit: cover;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
-.arrows{
+
+.arrows {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    
 }
 
-
-
-.leftarrow{
+.leftarrow {
     height: 20px;
     width: 20px;
     padding-right: 2px;
-
-
+    cursor: pointer;
 }
-.rightarrow{
+
+.rightarrow {
     height: 20px;
-    width: 20px;
-   
-    
+    width: 20px;  
+    cursor: pointer;
 }
-.describer{
+
+.describer {
     padding-left: 1rem;
 }

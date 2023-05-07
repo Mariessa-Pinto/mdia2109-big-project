@@ -24,6 +24,7 @@ export default function Accordion({
                             alt={'down icon'}
                             height={30}
                             width={30}
+                            className={styles.controls}
                         />
                      ) : (
                         <Image
@@ -31,11 +32,14 @@ export default function Accordion({
                             alt={'up icon'}
                             height={30}
                             width={30}
+                            className={styles.controls}
                         />
                     )}
-                    </div>
-                    </div>
-                        {isActive && <div className={styles.answerActive}>{answer}</div>}
-                    </div>
+                </div>
+            </div>
+            {
+                isActive && <div className={styles.answerActive}>{answer}</div>
+            }
+        </div>
     )
 }

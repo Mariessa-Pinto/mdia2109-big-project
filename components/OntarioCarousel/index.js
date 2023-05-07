@@ -1,5 +1,4 @@
-
-import react, {useState} from 'react';
+import {useState} from 'react';
 import { pictures } from '@/data/ontariodata.js'
 import styles from './OntarioCarousel.module.css'
 import Image from 'next/image';

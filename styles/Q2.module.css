@@ -50,6 +50,7 @@
     text-align: left;
     padding-left: 4rem;
     font-size: var(--body);
+    cursor: pointer;
 }
 
 .answerButtonActive {
@@ -73,6 +74,7 @@
     text-align: left;
     padding-left: 2rem;
     font-size: var(--body);
+    cursor: pointer;
 }
 
 .controls {

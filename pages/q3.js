@@ -54,6 +54,7 @@ export default function Q3() {
                             height={30}
                             width={30}
                             onClick={() => setDropDownOpen(!dropDownOpen)}
+                            className={styles.dropButton}
                         /></button>
                         {
                             dropDownOpen ? <>
